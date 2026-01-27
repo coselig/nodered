@@ -92,7 +92,7 @@
     {
         "id": "25ffbbb24f15449a",
         "type": "tab",
-        "label": "公版_2026_01_26_yunitrish",
+        "label": "公版_2026_01_27_yunitrish",
         "disabled": false,
         "info": "",
         "env": []
@@ -212,10 +212,10 @@
             "e7542cb00e4f2ca8",
             "ff4df08711cbce9f"
         ],
-        "x": 14,
-        "y": 719,
-        "w": 612,
-        "h": 122
+        "x": 614,
+        "y": 219,
+        "w": 602,
+        "h": 142
     },
     {
         "id": "0b1404521807c09e",
@@ -237,7 +237,7 @@
         ],
         "x": 604,
         "y": 19,
-        "w": 542,
+        "w": 532,
         "h": 182
     },
     {
@@ -264,23 +264,6 @@
         "h": 122
     },
     {
-        "id": "4a96b6947654ddc1",
-        "type": "group",
-        "z": "25ffbbb24f15449a",
-        "name": "TCP 1",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "705bbc9ccd5a368c",
-            "b8d5b7ce365938b3"
-        ],
-        "x": 1248,
-        "y": 7,
-        "w": 844,
-        "h": 986
-    },
-    {
         "id": "e1ab1740523d5add",
         "type": "group",
         "z": "25ffbbb24f15449a",
@@ -297,8 +280,8 @@
             "cc6d14a6289d56c2",
             "5fcee2686d31f7cf"
         ],
-        "x": 14,
-        "y": 1599,
+        "x": 694,
+        "y": 639,
         "w": 452,
         "h": 122
     },
@@ -322,7 +305,7 @@
             "36288117e46711c0"
         ],
         "x": 14,
-        "y": 859,
+        "y": 719,
         "w": 572,
         "h": 142
     },
@@ -349,34 +332,9 @@
             "ec4c4fc818f4de83"
         ],
         "x": 14,
-        "y": 1019,
+        "y": 879,
         "w": 552,
         "h": 202
-    },
-    {
-        "id": "212a06610902d8a2",
-        "type": "group",
-        "z": "25ffbbb24f15449a",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "0f9d2f93542801cf",
-            "2d3fcedb7d41602c",
-            "8ab50252e2aa4af3",
-            "9c064643cb85fbf1",
-            "a3cc316117465bce"
-        ],
-        "x": 1254,
-        "y": 1159,
-        "w": 532,
-        "h": 222
     },
     {
         "id": "378be3e1a478bb13",
@@ -398,13 +356,29 @@
             "2aef872636634761",
             "522d18be85c3d65c",
             "d059eaae48c6aa76",
-            "c758e9a139261a1a",
-            "28f6cb1512806e5e"
+            "c758e9a139261a1a"
         ],
         "x": 14,
-        "y": 1239,
-        "w": 692,
+        "y": 1099,
+        "w": 552,
         "h": 202
+    },
+    {
+        "id": "4a96b6947654ddc1",
+        "type": "group",
+        "z": "25ffbbb24f15449a",
+        "name": "TCP 1",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "705bbc9ccd5a368c",
+            "b8d5b7ce365938b3"
+        ],
+        "x": 1288,
+        "y": 7,
+        "w": 1004,
+        "h": 620
     },
     {
         "id": "705bbc9ccd5a368c",
@@ -420,18 +394,18 @@
             "24f74fdf58e963b8",
             "02da5e8bdc2b8b98",
             "f48bdd13ef2d7bbb",
-            "9fd8b146ddf7be0b",
             "1d8afa712d9219a1",
             "e1cbaea278d9c030",
             "6ae3ff78e035ed0f",
             "4d424757f8e799a1",
             "49e2eb1e1731f7a9",
-            "56558e29143917d0"
+            "56558e29143917d0",
+            "9fd8b146ddf7be0b"
         ],
-        "x": 1274,
+        "x": 1314,
         "y": 33,
-        "w": 792,
-        "h": 174
+        "w": 752,
+        "h": 188
     },
     {
         "id": "b8d5b7ce365938b3",
@@ -453,63 +427,15 @@
             "8e86285537a7ad65",
             "fc3e0ce1b0de4f67",
             "6c55a102a9eaccd2",
-            "4e06b458d208739c",
             "c5d8f3b76e06a79f",
-            "073e105f34c26a87",
             "008ed86d23fea30d",
-            "8b953adaedc4ba31"
+            "8b953adaedc4ba31",
+            "0a7fbc4d6bc27e15"
         ],
-        "x": 1288,
+        "x": 1314,
         "y": 239,
-        "w": 778,
-        "h": 728
-    },
-    {
-        "id": "073e105f34c26a87",
-        "type": "group",
-        "z": "25ffbbb24f15449a",
-        "g": "b8d5b7ce365938b3",
-        "name": "S402 DI 4x模式 ：homeassistant/sensor/s402/di",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "3de6d4834f57d64a",
-            "584081725842092d",
-            "b2fa8709903613e8",
-            "5d1a10570a9eefb6",
-            "464aa878b019ea5c",
-            "e3e53789dde3f91f",
-            "caca2d92b9029c5f",
-            "d8d409df37f5770d",
-            "54c72cf365772b6e"
-        ],
-        "x": 1314,
-        "y": 739,
-        "w": 632,
-        "h": 202
-    },
-    {
-        "id": "4e06b458d208739c",
-        "type": "group",
-        "z": "25ffbbb24f15449a",
-        "g": "b8d5b7ce365938b3",
-        "name": "feedback scene：homeassistant/scene/sunwave/event",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "20910aa8165396c3",
-            "f309c347af7f92e4",
-            "9a9e7dd31f81048f",
-            "b84bbc10c3165ed8",
-            "b0502a7d969aa2e3",
-            "6b6d674f134a9096"
-        ],
-        "x": 1314,
-        "y": 599,
-        "w": 652,
-        "h": 122
+        "w": 952,
+        "h": 362
     },
     {
         "id": "4d424757f8e799a1",
@@ -526,7 +452,7 @@
             "5a5862c726ce8ce1",
             "cd006fa0cbc4766c"
         ],
-        "x": 1494,
+        "x": 1554,
         "y": 59,
         "w": 82,
         "h": 122
@@ -536,7 +462,7 @@
         "type": "junction",
         "z": "25ffbbb24f15449a",
         "g": "705bbc9ccd5a368c",
-        "x": 1920,
+        "x": 1860,
         "y": 140,
         "wires": [
             [
@@ -640,7 +566,7 @@
         "type": "function",
         "z": "25ffbbb24f15449a",
         "g": "0fa25022a9061d8f",
-        "name": "GUO",
+        "name": "P805",
         "func": "/**\n * 組 Modbus RTU 讀取指令（0x03 / Holding Register）\n * GUO 設備專用\n */\n\nconst deviceID = msg.deviceID;\n\n// 參數\nconst FUNCTION_CODE = 0x03;\nconst START_ADDRESS = 520;\nconst QUANTITY = 28;\n\n// [Addr, Func, StartHi, StartLo, QtyHi, QtyLo]\nmsg.payload = Buffer.from([\n    deviceID,\n    FUNCTION_CODE,\n    (START_ADDRESS >> 8) & 0xff,\n    START_ADDRESS & 0xff,\n    (QUANTITY >> 8) & 0xff,\n    QUANTITY & 0xff,\n]);\n\nreturn msg;",
         "outputs": 1,
         "timeout": "",
@@ -805,7 +731,7 @@
         "z": "25ffbbb24f15449a",
         "g": "0b1404521807c09e",
         "name": "get scenes",
-        "func": "msg.scenes = [\n    { \n        name: \"romantic\", \n        display_name: \"浪漫模式\",\n        scene: 1, \n        group: \"all\", \n        lights: [\"p1\", \"p2\", \"pa\", \"pb\"],\n        module_id: \"1\"\n    },\n    { \n        name: \"work\", \n        display_name: \"工作模式\",\n        scene: 2, \n        group: \"all\", \n        lights: [\"p3\", \"p4\", \"pc\", \"pd\"],\n        module_id: \"1\"\n    },\n    { \n        name: \"reading\", \n        display_name: \"閱讀模式\",\n        scene: 3, \n        group: \"all\", \n        lights: [\"p5\", \"p6\"],\n        module_id: \"1\"\n    },\n];\nreturn msg;\n",
+        "func": "msg.scenes = [\n    { \n        name: \"sleep\", \n        display_name: \"睡眠模式\",\n        scene: 1, \n        group: \"all\", \n        lights: [\"p1\", \"p2\", \"pa\", \"pb\"],\n        module_id: \"1\"\n    },\n    { \n        name: \"work\", \n        display_name: \"工作模式\",\n        scene: 2, \n        group: \"all\", \n        lights: [\"p3\", \"p4\", \"pc\", \"pd\"],\n        module_id: \"1\"\n    },\n    { \n        name: \"reading\", \n        display_name: \"閱讀模式\",\n        scene: 3, \n        group: \"all\", \n        lights: [\"p5\", \"p6\"],\n        module_id: \"1\"\n    },\n];\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -951,7 +877,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 960,
+        "x": 980,
         "y": 160,
         "wires": [
             [
@@ -1017,168 +943,6 @@
         "wires": []
     },
     {
-        "id": "24f74fdf58e963b8",
-        "type": "function",
-        "z": "25ffbbb24f15449a",
-        "g": "705bbc9ccd5a368c",
-        "name": "收到回應 → 解鎖",
-        "func": "// =======================================\n// 收到回覆 → 解鎖（基於TCP動態管理）\n// =======================================\n\n// 1. 只要是 Buffer，就當作「有回覆」\nif (!Buffer.isBuffer(msg.payload)) {\n    return null;\n}\n\n// 2. 取得TCP標識符，預設為'_default'\nconst tcpId = msg.tcp || '_default';\n\n// 3. 清掉 timeout（如果還存在）\nconst timer = flow.get(`currentTimeout${tcpId}`);\nif (timer) {\n    clearTimeout(timer);\n    flow.set(`currentTimeout${tcpId}`, null);\n}\n\n// 4. 解鎖對應的TCP連接\nglobal.set(`waitingReply${tcpId}`, false);\n\n// 5. 狀態提示（方便你看流程在跑）\nnode.status({\n    fill: \"green\",\n    shape: \"dot\",\n    text: `收到回覆，解鎖 ${tcpId}`\n});\n\n// 6. 主動觸發發送流程，送下一筆\nmsg.tcp = tcpId; // 確保TCP ID傳遞\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1670,
-        "y": 140,
-        "wires": [
-            [
-                "02da5e8bdc2b8b98"
-            ]
-        ]
-    },
-    {
-        "id": "02da5e8bdc2b8b98",
-        "type": "function",
-        "z": "25ffbbb24f15449a",
-        "g": "705bbc9ccd5a368c",
-        "name": "發送流程 + timeout",
-        "func": "// =======================================\n// 發送流程 + Timeout（基於TCP動態管理）\n// =======================================\n\n// 超時時間（ms）\n// 建議實務值：600 ~ 1000\nconst TIMEOUT_MS = 800;\n\n// 1. 取得TCP標識符，預設為'_default'\nconst tcpId = msg.tcp || '_default';\n\n// 2. 取得對應TCP的佇列\nlet queue = global.get(`commandsQueue${tcpId}`);\nif (!Array.isArray(queue) || queue.length === 0) {\n  // 沒指令就什麼都不做\n  return null;\n}\n\n// 3. 若正在等回覆 → 絕對不能再送\nif (global.get(`waitingReply${tcpId}`)) {\n  return null;\n}\n\n// 4. 取出 FIFO 第一筆\nconst cmd = queue.shift();\nglobal.set(`commandsQueue${tcpId}`, queue);\n\n// 5. 上鎖（代表「現在有一筆正在飛」）\nglobal.set(`waitingReply${tcpId}`, true);\n\n// 6. 設定 timeout：\n//    無論發生什麼事，只要時間到就放行\nconst timer = setTimeout(() => {\n\n  // 解除鎖定\n  global.set(`waitingReply${tcpId}`, false);\n  flow.set(`currentTimeout${tcpId}`, null);\n\n  // 顯示狀態（方便現場 debug）\n  node.status({\n    fill: \"yellow\",\n    shape: \"ring\",\n    text: `timeout 放行 ${tcpId}`\n  });\n\n  // 主動觸發自己，再送下一筆\n  node.send([null, { _kick: true, tcp: tcpId, reason: \"timeout\" }]);\n}, TIMEOUT_MS);\n\n// 記住 timer，讓「收到回覆」能清掉\nflow.set(`currentTimeout${tcpId}`, timer);\n\n// 7. 將指令送到 tcp out\n//    注意：這裡只負責送，不關心結果\nreturn { payload: cmd, tcp: tcpId };",
-        "outputs": 2,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "// 部署節點後，此處添加的代碼將運行一次。 \n// 部署初始化：自動清空所有TCP的 queue & 解鎖，避免部署後卡死\n\n// 清理已知的TCP連接\nconst tcpIds = ['_default', '_tcp1', '_tcp2', '_tcp3'];\n\ntcpIds.forEach(tcpId => {\n    global.set(`commandsQueue${tcpId}`, []);\n    global.set(`waitingReply${tcpId}`, false);\n    flow.set(`currentCmd${tcpId}`, null);\n    flow.set(`currentTimeout${tcpId}`, null);\n});\n\n// 向下兼容：也清理舊的全局變量\nglobal.set(`commandsQueue`, []);\nglobal.set(`waitingReply`, false);\nflow.set(`currentCmd`, null);\nflow.set(`currentTimeout`, null);\n\nnode.status({ fill: \"grey\", shape: \"ring\", text: \"部署後已重置所有TCP\" });",
-        "finalize": "// 節點正在停止或重新部署時，將運行此處添加的代碼。 \n// 停止或重新部署時清掉所有TCP的計時器\n\n// 清理已知的TCP連接\nconst tcpIds = ['_default', '_tcp1', '_tcp2', '_tcp3'];\n\ntcpIds.forEach(tcpId => {\n    const t = flow.get(`currentTimeout${tcpId}`);\n    if (t) {\n        clearTimeout(t);\n    }\n    flow.set(`currentTimeout${tcpId}`, null);\n    global.set(`commandsQueue${tcpId}`, []);\n    global.set(`waitingReply${tcpId}`, false);\n    flow.set(`currentCmd${tcpId}`, null);\n});\n\n// 向下兼容：也清理舊的全局變量\nconst t = flow.get(`currentTimeout`);\nif (t) {\n    clearTimeout(t);\n}\nflow.set(`currentTimeout`, null);\nglobal.set(`commandsQueue`, []);\nglobal.set(`waitingReply`, false);\nflow.set(`currentCmd`, null);",
-        "libs": [],
-        "x": 1910,
-        "y": 100,
-        "wires": [
-            [
-                "6ae3ff78e035ed0f"
-            ],
-            [
-                "1d8afa712d9219a1"
-            ]
-        ],
-        "info": "【功能說明】\n此節點負責：\n1. 從 commandsQueue 佇列中取出下一筆指令\n2. 發送至 TCP 節點\n3. 啟動 Retry 機制（預設最多重送 2 次）\n4. 若成功回應 → 由 handle_reply 解鎖佇列\n5. 若失敗超時 → 自動解鎖並觸發下一筆送出\n"
-    },
-    {
-        "id": "f48bdd13ef2d7bbb",
-        "type": "function",
-        "z": "25ffbbb24f15449a",
-        "g": "705bbc9ccd5a368c",
-        "name": "加入佇列",
-        "func": "// =======================================\n// 加入佇列（基於TCP動態管理）\n// =======================================\n\n// 1. 取得TCP標識符，預設為'_default'\nconst tcpId = msg.tcp || '_default';\n\n// 2. 取得對應TCP的佇列（不存在就建立）\nlet queue = global.get(`commandsQueue${tcpId}`);\nif (!Array.isArray(queue)) {\n    queue = [];\n}\n\n// 3. 取得指令內容\n//    預期是 Buffer；若是 Array 自動轉 Buffer\nlet cmd = msg.payload;\nif (Array.isArray(cmd)) {\n    cmd = Buffer.from(cmd);\n}\n\n// 4. 只接受 Buffer，其他型態直接忽略\nif (!Buffer.isBuffer(cmd)) {\n    return null;\n}\n\n// 5. 推進對應TCP的 FIFO 佇列\nqueue.push(cmd);\nglobal.set(`commandsQueue${tcpId}`, queue);\n\n// 6. 若目前沒有在等回覆，主動喚醒發送流程\n//    payload 內容不重要，只是觸發用\nif (!global.get(`waitingReply${tcpId}`)) {\n    return { payload: null, tcp: tcpId };\n}\n\n// 7. 若正在等回覆，就單純入列，不再觸發\nreturn null;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1640,
-        "y": 100,
-        "wires": [
-            [
-                "02da5e8bdc2b8b98"
-            ]
-        ]
-    },
-    {
-        "id": "49e2eb1e1731f7a9",
-        "type": "function",
-        "z": "25ffbbb24f15449a",
-        "g": "705bbc9ccd5a368c",
-        "name": "CRC Builder",
-        "func": "/**\n * CRC Builder - CRC16(Modbus)\n */\n\nconst payload = msg.payload;\n\nif (!Buffer.isBuffer(payload)) return null;\n\nconst [crcLo, crcHi] = crc16Modbus(payload);\n\nmsg.payload = Buffer.concat([payload, Buffer.from([crcLo, crcHi])]);\nreturn msg;\n\nfunction crc16Modbus(buf) {\n    let crc = 0xffff;\n\n    for (let i = 0; i < buf.length; i++) {\n        crc ^= buf[i];\n\n        for (let j = 0; j < 8; j++) {\n            if (crc & 0x0001) crc = (crc >> 1) ^ 0xa001;\n            else crc >>= 1;\n        }\n    }\n\n    return [crc & 0xff, (crc >> 8) & 0xff];\n}",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1410,
-        "y": 100,
-        "wires": [
-            [
-                "5a5862c726ce8ce1"
-            ]
-        ]
-    },
-    {
-        "id": "9fd8b146ddf7be0b",
-        "type": "link in",
-        "z": "25ffbbb24f15449a",
-        "g": "705bbc9ccd5a368c",
-        "name": "CRC Builder",
-        "links": [
-            "d84ab5f2c9b7c8bc"
-        ],
-        "x": 1315,
-        "y": 100,
-        "wires": [
-            [
-                "49e2eb1e1731f7a9"
-            ]
-        ]
-    },
-    {
-        "id": "e1cbaea278d9c030",
-        "type": "tcp in",
-        "z": "25ffbbb24f15449a",
-        "g": "705bbc9ccd5a368c",
-        "name": "",
-        "server": "client",
-        "host": "192.168.1.208",
-        "port": "502",
-        "datamode": "stream",
-        "datatype": "buffer",
-        "newline": "",
-        "topic": "",
-        "trim": false,
-        "base64": false,
-        "tls": "",
-        "x": 1345,
-        "y": 140,
-        "wires": [
-            [
-                "56558e29143917d0",
-                "cd006fa0cbc4766c"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "6ae3ff78e035ed0f",
-        "type": "tcp out",
-        "z": "25ffbbb24f15449a",
-        "g": "705bbc9ccd5a368c",
-        "name": "",
-        "host": "192.168.1.208",
-        "port": "502",
-        "beserver": "client",
-        "base64": false,
-        "end": false,
-        "tls": "",
-        "x": 2025,
-        "y": 80,
-        "wires": [],
-        "l": false
-    },
-    {
-        "id": "56558e29143917d0",
-        "type": "link out",
-        "z": "25ffbbb24f15449a",
-        "g": "705bbc9ccd5a368c",
-        "name": "link out 10",
-        "mode": "link",
-        "links": [
-            "8e86285537a7ad65"
-        ],
-        "x": 1465,
-        "y": 160,
-        "wires": []
-    },
-    {
         "id": "37dc274c91981ca4",
         "type": "mqtt in",
         "z": "25ffbbb24f15449a",
@@ -1192,8 +956,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 180,
-        "y": 760,
+        "x": 780,
+        "y": 260,
         "wires": [
             [
                 "e7542cb00e4f2ca8"
@@ -1214,8 +978,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 180,
-        "y": 800,
+        "x": 780,
+        "y": 320,
         "wires": [
             [
                 "e7542cb00e4f2ca8"
@@ -1235,8 +999,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 450,
-        "y": 780,
+        "x": 1050,
+        "y": 300,
         "wires": [
             [
                 "ff4df08711cbce9f"
@@ -1253,8 +1017,8 @@
         "links": [
             "ac34a11a46a983ce"
         ],
-        "x": 585,
-        "y": 780,
+        "x": 1175,
+        "y": 300,
         "wires": []
     },
     {
@@ -1401,7 +1165,7 @@
         "z": "25ffbbb24f15449a",
         "g": "0fa25022a9061d8f",
         "name": "設備清單",
-        "func": "const p404 = new Set();\nconst p210 = new Set();\nconst guo = new Set();\n\nmsg.devices.map(device => {\n    // node.warn(`${device.module_id} ,${device.channel} ,${device.model}`);\n    if (device.model === \"p404\") p404.add(device.module_id);\n    else if (device.model === \"p210\") p210.add(device.module_id);\n    else if (device.model === \"p805\") guo.add(device.module_id);\n});\n\n\nconst p404_q = Array.from(p404, x => ({ deviceID: x}));\nconst p210_q = Array.from(p210, x => ({ deviceID: x}));\nconst guo_q = Array.from(guo, x => ({ deviceID: x}));\n\nreturn [\n    p404_q,\n    p210_q,\n    guo_q,\n];",
+        "func": "const p404 = new Set();\nconst p210 = new Set();\nconst guo = new Set();\n\nmsg.devices.map(device => {\n    // node.warn(`${device.module_id} ,${device.channel} ,${device.model}`);\n    if (device.model === \"p404\") p404.add(device.module_id);\n    else if (device.model === \"p210\") p210.add(device.module_id);\n    else if (device.model === \"p805\" || device.model === \"p305\") guo.add(device.module_id);\n});\n\n\nconst p404_q = Array.from(p404, x => ({ deviceID: x}));\nconst p210_q = Array.from(p210, x => ({ deviceID: x}));\nconst guo_q = Array.from(guo, x => ({ deviceID: x}));\n\nreturn [\n    p404_q,\n    p210_q,\n    guo_q,\n];",
         "outputs": 3,
         "timeout": 0,
         "noerr": 0,
@@ -1419,374 +1183,6 @@
             ],
             [
                 "49ddfdc27ca7f031"
-            ]
-        ]
-    },
-    {
-        "id": "3de6d4834f57d64a",
-        "type": "function",
-        "z": "25ffbbb24f15449a",
-        "g": "073e105f34c26a87",
-        "name": "S402 4x DI 單擊解析",
-        "func": "\n/**\n * S402 4x DI 單擊解析\n *\n * Input:\n *   msg.payload = Buffer(8)\n *   [01, 06, 01, A0, index, flags, crcH, crcL]\n *\n * Output:\n *   msg.topic   = homeassistant/sensor/s402/di\n *   msg.payload = { id, di }\n */\n\nlet buf = msg.payload;\n\nif (!Buffer.isBuffer(buf) || buf.length !== 8) return null;\n\n// 解構（CRC 不用）\nlet [h1, h2, h3, cmd, index, flags] = buf;\n\n// 判斷是否為 S402 DI 4x 封包\nif (h1 !== 0x01 || h2 !== 0x06 || h3 !== 0x01 || cmd !== 0xA0) {\n    return null;\n}\n\nflags &= 0xFF;          // in1 ~ in8\nif (flags === 0) return null;\n\n// 單擊事件：取第一個命中的 DI（1~8）\nlet di = 0;\nfor (let i = 0; i < 8; i++) {\n    if (flags & (1 << i)) {\n        di = i + 1;\n        break;\n    }\n}\nif (di === 0) return null;\n\nmsg.topic = \"homeassistant/sensor/s402/di\";\nmsg.payload = {\n    id: index,\n    di\n};\n\nnode.status({\n    fill: \"green\",\n    shape: \"dot\",\n    text: `s402 id=${index} di=${di}`\n});\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1820,
-        "y": 840,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "584081725842092d",
-        "type": "function",
-        "z": "25ffbbb24f15449a",
-        "g": "073e105f34c26a87",
-        "name": "{ \"id\": 3, \"di\": 1 }",
-        "func": "// [01 06 01 A0 03 01 00 00]\nmsg.payload = Buffer.from([\n    0x01, // header\n    0x06,\n    0x01,\n    0xA0, // DI 4x\n    0x03, // id = 3\n    0x01, // 0000 0001 → DI1\n    0x00, // crcH (ignore)\n    0x00  // crcL\n]);\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1520,
-        "y": 780,
-        "wires": [
-            [
-                "3de6d4834f57d64a"
-            ]
-        ]
-    },
-    {
-        "id": "b2fa8709903613e8",
-        "type": "function",
-        "z": "25ffbbb24f15449a",
-        "g": "073e105f34c26a87",
-        "name": "{ \"id\": 7, \"di\": 4 }",
-        "func": "// [01 06 01 A0 07 08 00 00]\nmsg.payload = Buffer.from([\n    0x01,\n    0x06,\n    0x01,\n    0xA0,\n    0x07, // id = 7\n    0x08, // 0000 1000 → DI4\n    0x00,\n    0x00\n]);\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1520,
-        "y": 820,
-        "wires": [
-            [
-                "3de6d4834f57d64a"
-            ]
-        ]
-    },
-    {
-        "id": "5d1a10570a9eefb6",
-        "type": "function",
-        "z": "25ffbbb24f15449a",
-        "g": "073e105f34c26a87",
-        "name": "{ \"id\": 12, \"di\": 6 }",
-        "func": "// [01 06 01 A0 0C 20 00 00]\nmsg.payload = Buffer.from([\n    0x01,\n    0x06,\n    0x01,\n    0xA0,\n    0x0C, // id = 12\n    0x20, // 0010 0000 → DI6\n    0x00,\n    0x00\n]);\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1530,
-        "y": 860,
-        "wires": [
-            [
-                "3de6d4834f57d64a"
-            ]
-        ]
-    },
-    {
-        "id": "464aa878b019ea5c",
-        "type": "function",
-        "z": "25ffbbb24f15449a",
-        "g": "073e105f34c26a87",
-        "name": "{ \"id\": 1, \"di\": 2 }",
-        "func": "// DI2 + DI5（只會取 DI2）\nmsg.payload = Buffer.from([\n    0x01,\n    0x06,\n    0x01,\n    0xA0,\n    0x01,\n    0x12, // 0001 0010 → DI2 + DI5\n    0x00,\n    0x00\n]);\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1520,
-        "y": 900,
-        "wires": [
-            [
-                "3de6d4834f57d64a"
-            ]
-        ]
-    },
-    {
-        "id": "e3e53789dde3f91f",
-        "type": "inject",
-        "z": "25ffbbb24f15449a",
-        "g": "073e105f34c26a87",
-        "name": "",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 1375,
-        "y": 780,
-        "wires": [
-            [
-                "584081725842092d"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "caca2d92b9029c5f",
-        "type": "inject",
-        "z": "25ffbbb24f15449a",
-        "g": "073e105f34c26a87",
-        "name": "",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 1375,
-        "y": 820,
-        "wires": [
-            [
-                "b2fa8709903613e8"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "d8d409df37f5770d",
-        "type": "inject",
-        "z": "25ffbbb24f15449a",
-        "g": "073e105f34c26a87",
-        "name": "",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 1375,
-        "y": 860,
-        "wires": [
-            [
-                "5d1a10570a9eefb6"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "54c72cf365772b6e",
-        "type": "inject",
-        "z": "25ffbbb24f15449a",
-        "g": "073e105f34c26a87",
-        "name": "",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 1375,
-        "y": 900,
-        "wires": [
-            [
-                "464aa878b019ea5c"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "97d59163b320300f",
-        "type": "mqtt out",
-        "z": "25ffbbb24f15449a",
-        "g": "b8d5b7ce365938b3",
-        "name": "",
-        "topic": "",
-        "qos": "0",
-        "retain": "false",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "751ec40a6956d4f9",
-        "x": 2025,
-        "y": 400,
-        "wires": [],
-        "l": false
-    },
-    {
-        "id": "8e94355ecf37cf89",
-        "type": "function",
-        "z": "25ffbbb24f15449a",
-        "g": "b8d5b7ce365938b3",
-        "name": "分流器",
-        "func": "/**\n * 分流器：根據 msg.devices 中的 model 和 type 分流到對應的解析節點\n * 輸出 1: p404-single\n * 輸出 2: p404-dual\n * 輸出 3: p210-single\n * 輸出 4: p210-dual\n * 輸出 5: sunwave-scene\n * 輸出 6: guo-single\n * 輸出 7: guo-dual\n */\n\n// 防護檢查\nif (!msg.payload || !Buffer.isBuffer(msg.payload)) return null;\n\n// === 路由配置 ===\nconst DEVICE_ROUTES = {\n    \"p404-single\": 0,\n    \"p404-dual\": 1,\n    \"p210-single\": 2,\n    \"p210-dual\": 3,\n    \"sunwave-scene\": 4,\n    \"p805-single\": 5,\n    \"p805-dual\": 6,\n};\n\nconst SCENE_ROUTE = 4;\n\n// === 工具函數 ===\nfunction isSunwaveScene(buf) {\n    return buf.length === 8 && \n           buf[0] === 0xFE && \n           buf[1] === 0x06 && \n           buf[2] === 0x08 && \n           buf[3] === 0x20;\n}\n\nfunction createRouteOutput(targetIndex) {\n    const outputs = new Array(7).fill(null);\n    outputs[targetIndex] = msg;\n    return outputs;\n}\n\n// === 場景檢測 ===\nif (isSunwaveScene(msg.payload)) {\n    return createRouteOutput(SCENE_ROUTE);\n}\n\n// === 設備分流邏輯 ===\nif (msg.payload.length < 2 || msg.payload[1] !== 0x03) {\n    return null; // 只收 Read Holding Registers 回傳\n}\n\nconst slaveId = msg.payload[0];\nconst devices = msg.devices || [];\nconst matchedDevice = devices.find(d => d.module_id == slaveId);\n\nif (!matchedDevice) {\n    node.warn(`找不到設備: slaveId=${slaveId}, devices=${JSON.stringify(devices.map(d => ({id: d.module_id, model: d.model, type: d.type})))}`);    \n    return null;\n}\n\nconst deviceKey = `${matchedDevice.model}-${matchedDevice.type}`;\nconst routeIndex = DEVICE_ROUTES[deviceKey];\n\nif (routeIndex === undefined) {\n    node.warn(`找不到路由: deviceKey=${deviceKey}, 可用路由=${Object.keys(DEVICE_ROUTES)}`);\n    return null;\n}\n\nnode.status({ fill: \"green\", shape: \"dot\", text: `路由到: ${deviceKey} (輸出${routeIndex + 1})` });\nreturn createRouteOutput(routeIndex);",
-        "outputs": 7,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1610,
-        "y": 400,
-        "wires": [
-            [
-                "096378aa0e988429"
-            ],
-            [
-                "73384aeeb9b9b0ed"
-            ],
-            [
-                "f89a379dd163acda"
-            ],
-            [
-                "9867cd434b817462"
-            ],
-            [
-                "6c55a102a9eaccd2"
-            ],
-            [
-                "008ed86d23fea30d"
-            ],
-            [
-                "8b953adaedc4ba31"
-            ]
-        ]
-    },
-    {
-        "id": "096378aa0e988429",
-        "type": "function",
-        "z": "25ffbbb24f15449a",
-        "g": "b8d5b7ce365938b3",
-        "name": "p404-single-analyzation",
-        "func": "/**\n * P404 單色溫解析器（0x03 Read Holding Registers）\n * - 從 msg.devices 動態讀取設備配置\n * - 輸出：MQTT 訊息陣列 [{ topic, payload }, ...]\n */\n\n// === Channel 對應 Register 映射（單色溫）===\nconst CHANNEL_REG_MAP = {\n    \"1\": { brightnessReg: 0 },\n    \"2\": { brightnessReg: 1 },\n    \"3\": { brightnessReg: 2 },\n    \"4\": { brightnessReg: 3 },\n};\n\n// === 讀取指定 register 的 Low Byte ===\nfunction readRegLo(frame, regIndex) {\n    const dataStart = 3;\n    const idx = dataStart + regIndex * 2 + 1;\n    if (idx >= frame.length - 2) return null;\n    return frame[idx];\n}\n\n// ========================= 主程式 =========================\nconst frame = msg.payload;\nif (!Buffer.isBuffer(frame)) return null;\nif (frame.length < 5) return null;\n\nconst slaveId = frame[0];\nconst funcCode = frame[1];\nconst byteCount = frame[2];\n\nif (funcCode !== 0x03) return null;\nif (byteCount !== 4 && byteCount !== 8) return null;\n\nconst expectedLen = 3 + byteCount + 2;\nif (frame.length !== expectedLen) return null;\n\nconst regCount = byteCount / 2;\nconst devices = msg.devices || [];\n\n// 篩選出 P404 單色溫且符合當前 slaveId 的設備\nconst targetDevices = devices.filter(d => \n    d.model === \"p404\" && d.type === \"single\" && d.module_id == slaveId\n);\n\nconst mqttMsgs = [];\n\nfor (const device of targetDevices) {\n    const ch = device.channel;\n    const info = CHANNEL_REG_MAP[ch];\n    if (!info) continue;\n    if (info.brightnessReg >= regCount) continue;\n\n    const brightness = readRegLo(frame, info.brightnessReg);\n    if (brightness === null) continue;\n\n    const baseTopic = `homeassistant/light/single/${slaveId}/${ch}`;\n    const setTopic = `${baseTopic}/set`;\n\n    if (brightness === 0) {\n        mqttMsgs.push({ topic: `${baseTopic}/state`, payload: \"OFF\" });\n    } else {\n        mqttMsgs.push(\n            { topic: `${baseTopic}/state`, payload: \"ON\" },\n            { topic: `${baseTopic}/brightness`, payload: String(brightness) },\n            { topic: `${setTopic}/brightness`, payload: String(brightness) }\n        );\n    }\n}\n\nif (mqttMsgs.length === 0) return null;\nreturn [mqttMsgs];",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1830,
-        "y": 280,
-        "wires": [
-            [
-                "97d59163b320300f"
-            ]
-        ]
-    },
-    {
-        "id": "73384aeeb9b9b0ed",
-        "type": "function",
-        "z": "25ffbbb24f15449a",
-        "g": "b8d5b7ce365938b3",
-        "name": "p404-dual-analyzation",
-        "func": "/**\n * P404 雙色溫解析器（0x03 Read Holding Registers）\n * - 從 msg.devices 動態讀取設備配置\n * - 輸出：MQTT 訊息陣列 [{ topic, payload }, ...]\n */\n\n// === Channel 對應 Register 映射（雙色溫）===\nconst CHANNEL_REG_MAP = {\n    \"a\": { brightnessReg: 0, colortempReg: 1 },\n    \"b\": { brightnessReg: 2, colortempReg: 3 },\n};\n\n// === 色溫轉換：Modbus(0~100) → mired(HA) ===\nfunction toMired(ctPercent) {\n    const MIRED_MIN = 154; // 6494 K\n    const MIRED_MAX = 370; // 2703 K\n    return Math.round(MIRED_MAX + (ctPercent / 100) * (MIRED_MIN - MIRED_MAX));\n}\n\n// === 讀取指定 register 的 Low Byte ===\nfunction readRegLo(frame, regIndex) {\n    const dataStart = 3;\n    const idx = dataStart + regIndex * 2 + 1;\n    if (idx >= frame.length - 2) return null;\n    return frame[idx];\n}\n\n// ========================= 主程式 =========================\nconst frame = msg.payload;\nif (!Buffer.isBuffer(frame)) return null;\nif (frame.length < 5) return null;\n\nconst slaveId = frame[0];\nconst funcCode = frame[1];\nconst byteCount = frame[2];\n\nif (funcCode !== 0x03) return null;\nif (byteCount !== 4 && byteCount !== 8) return null;\n\nconst expectedLen = 3 + byteCount + 2;\nif (frame.length !== expectedLen) return null;\n\nconst regCount = byteCount / 2;\nconst devices = msg.devices || [];\n\n// 篩選出 P404 雙色溫且符合當前 slaveId 的設備\nconst targetDevices = devices.filter(d => \n    d.model === \"p404\" && d.type === \"dual\" && d.module_id == slaveId\n);\n\nconst mqttMsgs = [];\n\nfor (const device of targetDevices) {\n    const ch = device.channel;\n    const info = CHANNEL_REG_MAP[ch];\n    if (!info) continue;\n    if (info.brightnessReg >= regCount) continue;\n\n    const brightness = readRegLo(frame, info.brightnessReg);\n    if (brightness === null) continue;\n\n    const baseTopic = `homeassistant/light/dual/${slaveId}/${ch}`;\n    const setTopic = `${baseTopic}/set`;\n\n    if (brightness === 0) {\n        mqttMsgs.push({ topic: `${baseTopic}/state`, payload: \"OFF\" });\n    } else {\n        mqttMsgs.push(\n            { topic: `${baseTopic}/state`, payload: \"ON\" },\n            { topic: `${baseTopic}/brightness`, payload: String(brightness) },\n            { topic: `${setTopic}/brightness`, payload: String(brightness) }\n        );\n\n        // 雙色溫有 colortemp\n        if (info.colortempReg < regCount) {\n            const ctRaw = readRegLo(frame, info.colortempReg);\n            if (ctRaw !== null) {\n                const mired = toMired(ctRaw);\n                mqttMsgs.push(\n                    { topic: `${baseTopic}/colortemp`, payload: String(mired) },\n                    { topic: `${setTopic}/colortemp`, payload: String(mired) }\n                );\n            }\n        }\n    }\n}\n\nif (mqttMsgs.length === 0) return null;\nreturn [mqttMsgs];",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1840,
-        "y": 320,
-        "wires": [
-            [
-                "97d59163b320300f"
-            ]
-        ]
-    },
-    {
-        "id": "f89a379dd163acda",
-        "type": "function",
-        "z": "25ffbbb24f15449a",
-        "g": "b8d5b7ce365938b3",
-        "name": "p210-single-analyzation",
-        "func": "/**\n * P210 單色溫解析器（0x03 Read Holding Registers）\n * - 從 msg.devices 動態讀取設備配置\n * - 輸出：MQTT 訊息陣列 [{ topic, payload }, ...]\n */\n\n// === Channel 對應 Register 映射（單色溫）===\nconst CHANNEL_REG_MAP = {\n    \"1\": { brightnessReg: 0 },\n    \"2\": { brightnessReg: 1 },\n    \"3\": { brightnessReg: 2 },\n    \"4\": { brightnessReg: 3 },\n};\n\n// === 讀取指定 register 的 Low Byte ===\nfunction readRegLo(frame, regIndex) {\n    const dataStart = 3;\n    const idx = dataStart + regIndex * 2 + 1;\n    if (idx >= frame.length - 2) return null;\n    return frame[idx];\n}\n\n// ========================= 主程式 =========================\nconst frame = msg.payload;\nif (!Buffer.isBuffer(frame)) return null;\nif (frame.length < 5) return null;\n\nconst slaveId = frame[0];\nconst funcCode = frame[1];\nconst byteCount = frame[2];\n\nif (funcCode !== 0x03) return null;\nif (byteCount !== 4 && byteCount !== 8) return null;\n\nconst expectedLen = 3 + byteCount + 2;\nif (frame.length !== expectedLen) return null;\n\nconst regCount = byteCount / 2;\nconst devices = msg.devices || [];\n\n// 篩選出 P210 單色溫且符合當前 slaveId 的設備\nconst targetDevices = devices.filter(d => \n    d.model === \"p210\" && d.type === \"single\" && d.module_id == slaveId\n);\n\nconst mqttMsgs = [];\n\nfor (const device of targetDevices) {\n    const ch = device.channel;\n    const info = CHANNEL_REG_MAP[ch];\n    if (!info) continue;\n    if (info.brightnessReg >= regCount) continue;\n\n    const brightness = readRegLo(frame, info.brightnessReg);\n    if (brightness === null) continue;\n\n    const baseTopic = `homeassistant/light/single/${slaveId}/${ch}`;\n    const setTopic = `${baseTopic}/set`;\n\n    if (brightness === 0) {\n        mqttMsgs.push({ topic: `${baseTopic}/state`, payload: \"OFF\" });\n    } else {\n        mqttMsgs.push(\n            { topic: `${baseTopic}/state`, payload: \"ON\" },\n            { topic: `${baseTopic}/brightness`, payload: String(brightness) },\n            { topic: `${setTopic}/brightness`, payload: String(brightness) }\n        );\n    }\n}\n\nif (mqttMsgs.length === 0) return null;\nreturn [mqttMsgs];",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1830,
-        "y": 360,
-        "wires": [
-            [
-                "97d59163b320300f"
-            ]
-        ]
-    },
-    {
-        "id": "9867cd434b817462",
-        "type": "function",
-        "z": "25ffbbb24f15449a",
-        "g": "b8d5b7ce365938b3",
-        "name": "p210-dual-analyzation",
-        "func": "/**\n * P210 雙色溫解析器（0x03 Read Holding Registers）\n * - 從 msg.devices 動態讀取設備配置\n * - 輸出：MQTT 訊息陣列 [{ topic, payload }, ...]\n */\n\n// === Channel 對應 Register 映射（雙色溫）===\nconst CHANNEL_REG_MAP = {\n    \"a\": { brightnessReg: 0, colortempReg: 1 },\n    \"b\": { brightnessReg: 2, colortempReg: 3 },\n};\n\n// === 色溫轉換：Modbus(0~100) → mired(HA) ===\nfunction toMired(ctPercent) {\n    const MIRED_MIN = 154; // 6494 K\n    const MIRED_MAX = 370; // 2703 K\n    return Math.round(MIRED_MAX + (ctPercent / 100) * (MIRED_MIN - MIRED_MAX));\n}\n\n// === 讀取指定 register 的 Low Byte ===\nfunction readRegLo(frame, regIndex) {\n    const dataStart = 3;\n    const idx = dataStart + regIndex * 2 + 1;\n    if (idx >= frame.length - 2) return null;\n    return frame[idx];\n}\n\n// ========================= 主程式 =========================\nconst frame = msg.payload;\nif (!Buffer.isBuffer(frame)) return null;\nif (frame.length < 5) return null;\n\nconst slaveId = frame[0];\nconst funcCode = frame[1];\nconst byteCount = frame[2];\n\nif (funcCode !== 0x03) return null;\nif (byteCount !== 4 && byteCount !== 8) return null;\n\nconst expectedLen = 3 + byteCount + 2;\nif (frame.length !== expectedLen) return null;\n\nconst regCount = byteCount / 2;\nconst devices = msg.devices || [];\n\n// 篩選出 P210 雙色溫且符合當前 slaveId 的設備\nconst targetDevices = devices.filter(d => \n    d.model === \"p210\" && d.type === \"dual\" && d.module_id == slaveId\n);\n\nconst mqttMsgs = [];\n\nfor (const device of targetDevices) {\n    const ch = device.channel;\n    const info = CHANNEL_REG_MAP[ch];\n    if (!info) continue;\n    if (info.brightnessReg >= regCount) continue;\n\n    const brightness = readRegLo(frame, info.brightnessReg);\n    if (brightness === null) continue;\n\n    const baseTopic = `homeassistant/light/dual/${slaveId}/${ch}`;\n    const setTopic = `${baseTopic}/set`;\n\n    if (brightness === 0) {\n        mqttMsgs.push({ topic: `${baseTopic}/state`, payload: \"OFF\" });\n    } else {\n        mqttMsgs.push(\n            { topic: `${baseTopic}/state`, payload: \"ON\" },\n            { topic: `${baseTopic}/brightness`, payload: String(brightness) },\n            { topic: `${setTopic}/brightness`, payload: String(brightness) }\n        );\n\n        // 雙色溫有 colortemp\n        if (info.colortempReg < regCount) {\n            const ctRaw = readRegLo(frame, info.colortempReg);\n            if (ctRaw !== null) {\n                const mired = toMired(ctRaw);\n                mqttMsgs.push(\n                    { topic: `${baseTopic}/colortemp`, payload: String(mired) },\n                    { topic: `${setTopic}/colortemp`, payload: String(mired) }\n                );\n            }\n        }\n    }\n}\n\nif (mqttMsgs.length === 0) return null;\nreturn [mqttMsgs];",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1840,
-        "y": 400,
-        "wires": [
-            [
-                "97d59163b320300f"
-            ]
-        ]
-    },
-    {
-        "id": "8e86285537a7ad65",
-        "type": "link in",
-        "z": "25ffbbb24f15449a",
-        "g": "b8d5b7ce365938b3",
-        "name": "FeedBack",
-        "links": [
-            "56558e29143917d0"
-        ],
-        "x": 1355,
-        "y": 360,
-        "wires": [
-            [
-                "fc3e0ce1b0de4f67"
-            ]
-        ]
-    },
-    {
-        "id": "fc3e0ce1b0de4f67",
-        "type": "function",
-        "z": "25ffbbb24f15449a",
-        "g": "b8d5b7ce365938b3",
-        "name": "CRC Checker",
-        "func": "/**\n * CRC16 驗證過濾器（Modbus）\n * - msg.payload 必須是 Buffer\n * - CRC 正確才往下傳，否則丟棄\n */\n\nconst frame = msg.payload;\n\nif (!Buffer.isBuffer(frame)) return null;\nif (frame.length < 3) return null; // 至少要有 1 byte 資料 + 2 byte CRC\n\nif (!verifyCrc16Modbus(frame)) return null;\n\nnode.status({ fill: \"green\", shape: \"dot\", text: \"CRC OK\" });\nmsg.source = \"feedback\"; // 標記來源\nreturn msg;\n\nfunction verifyCrc16Modbus(buf) {\n    const crc = crc16Modbus(buf.slice(0, -2));\n    const crcLo = crc & 0xff;\n    const crcHi = (crc >> 8) & 0xff;\n\n    return (crcLo === buf[buf.length - 2]) && (crcHi === buf[buf.length - 1]);\n}\n\nfunction crc16Modbus(buf) {\n    let crc = 0xffff;\n\n    for (let i = 0; i < buf.length; i++) {\n        crc ^= buf[i];\n\n        for (let j = 0; j < 8; j++) {\n            if (crc & 0x0001) crc = (crc >> 1) ^ 0xa001;\n            else crc >>= 1;\n        }\n    }\n\n    return crc;\n}",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1420,
-        "y": 400,
-        "wires": [
-            [
-                "c5d8f3b76e06a79f"
             ]
         ]
     },
@@ -1885,28 +1281,6 @@
         "l": true
     },
     {
-        "id": "cd006fa0cbc4766c",
-        "type": "function",
-        "z": "25ffbbb24f15449a",
-        "g": "4d424757f8e799a1",
-        "name": "tcp_queue_name",
-        "func": "msg.tcp = \"_tcp1\";\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1535,
-        "y": 140,
-        "wires": [
-            [
-                "24f74fdf58e963b8"
-            ]
-        ],
-        "l": false
-    },
-    {
         "id": "4aaf247fca5b69f2",
         "type": "inject",
         "z": "25ffbbb24f15449a",
@@ -1918,8 +1292,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 120,
-        "y": 1640,
+        "x": 800,
+        "y": 680,
         "wires": [
             [
                 "f39ec6d621860361"
@@ -1939,8 +1313,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 300,
-        "y": 1640,
+        "x": 980,
+        "y": 680,
         "wires": [
             [
                 "6c30ab931a2811c1"
@@ -1964,8 +1338,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 425,
-        "y": 1660,
+        "x": 1105,
+        "y": 700,
         "wires": [
             []
         ],
@@ -1983,8 +1357,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 120,
-        "y": 1680,
+        "x": 800,
+        "y": 720,
         "wires": [
             [
                 "5fcee2686d31f7cf"
@@ -2004,200 +1378,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 300,
-        "y": 1680,
+        "x": 980,
+        "y": 720,
         "wires": [
             [
                 "6c30ab931a2811c1"
-            ]
-        ]
-    },
-    {
-        "id": "6c55a102a9eaccd2",
-        "type": "function",
-        "z": "25ffbbb24f15449a",
-        "g": "b8d5b7ce365938b3",
-        "name": "sunwave-scene-analyzation",
-        "func": "/**\n * Sunwave Scene Event 解析（整合到分流器）\n *\n * Input:\n *   msg.payload = Buffer(8)\n *   [FE, 06, 08, 20, VALUE_H, VALUE_L, CRC_H, CRC_L]\n *\n * Output:\n *   msg.topic   = homeassistant/scene/sunwave/event\n *   msg.payload = { scene: 1~20, group: 1~96 | \"all\" }\n */\n\nlet buf = msg.payload;\n\nif (!Buffer.isBuffer(buf) || buf.length !== 8) return null;\n\n// 解構（CRC 不處理，因為已經在上層驗證過）\nlet [deviceId, command, addrH, addrL, valueH, valueL] = buf;\n\n// 基本封包判斷（這個檢查在分流器已經做過，但為了安全再檢查一次）\nif (\n    deviceId !== 0xFE ||\n    command  !== 0x06 ||\n    addrH    !== 0x08 ||\n    addrL    !== 0x20\n) {\n    return null;\n}\n\n// ===== 解析 VALUE =====\n\n// scene: bit[14..8] → valueH 的低 7 bits\nlet scene = valueH & 0x7F;   // 0b0111_1111\n\nif (scene < 1 || scene > 20) return null;\n\n// group\nlet group;\nif (valueL === 0xFF) {\n    group = \"all\";\n} else if (valueL >= 1 && valueL <= 96) {\n    group = valueL;\n} else {\n    return null;\n}\n\nmsg.topic = \"homeassistant/scene/sunwave/event\";\nmsg.payload = { scene, group };\n\nnode.status({\n    fill: \"green\",\n    shape: \"dot\",\n    text: `scene=${scene}, group=${group}`\n});\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1840,
-        "y": 440,
-        "wires": [
-            [
-                "97d59163b320300f"
-            ]
-        ]
-    },
-    {
-        "id": "008ed86d23fea30d",
-        "type": "function",
-        "z": "25ffbbb24f15449a",
-        "g": "b8d5b7ce365938b3",
-        "name": "p805-single-analyzation",
-        "func": "/**\n * GUO 單色溫解析器（0x03 Read Holding Registers）\n * - 從 msg.devices 動態讀取設備配置\n * - 輸出：MQTT 訊息陣列 [{ topic, payload }, ...]\n */\n\n// === Channel 對應 byte 映射（單色溫）===\nconst channelByteMap = {\n    \"1\": { type: \"single\", brightnessByte: 4 },\n    \"2\": { type: \"single\", brightnessByte: 6 },\n    \"3\": { type: \"single\", brightnessByte: 8 },\n    \"4\": { type: \"single\", brightnessByte: 10 },\n    \"5\": { type: \"single\", brightnessByte: 12 },\n    \"6\": { type: \"single\", brightnessByte: 14 },\n    \"7\": { type: \"single\", brightnessByte: 16 },\n    \"8\": { type: \"single\", brightnessByte: 18 }\n};\n\n// === 主程式開始 ===\nconst buffer = msg.payload;\n\n// === 基礎防錯檢查 ===\nif (!Buffer.isBuffer(buffer)) return null;\nif (buffer.length !== 61) return null;\n\nconst id = buffer[0];\nconst funcCode = buffer[1];\nconst byteCount = buffer[2];\n\nif (funcCode !== 0x03 || byteCount !== 56) return null;\n\n// === 取得設備清單 ===\nconst devices = msg.devices || [];\nconst targetDevices = devices.filter(d => \n    d.brand === \"guo\" && d.model === \"p805\" && d.type === \"single\" && d.module_id == id\n);\n\nconst mqttMsgs = [];\n\nfor (const device of targetDevices) {\n    const channel = device.channel;\n    const info = channelByteMap[channel];\n    if (!info) continue;\n\n    const brightness = buffer[info.brightnessByte];\n    const deviceID = device.module_id;\n    const stateTopic = `homeassistant/light/single/${deviceID}/${channel}`;\n    const setTopic = `${stateTopic}/set`;\n\n    if (brightness === 0) {\n        mqttMsgs.push({ topic: `${stateTopic}/state`, payload: \"OFF\" });\n    } else {\n        mqttMsgs.push(\n            { topic: `${stateTopic}/state`, payload: \"ON\" },\n            { topic: `${stateTopic}/brightness`, payload: brightness.toString() },\n            { topic: `${setTopic}/brightness`, payload: brightness.toString() }\n        );\n    }\n}\n\nif (mqttMsgs.length === 0) return null;\nreturn [mqttMsgs];",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1850,
-        "y": 480,
-        "wires": [
-            [
-                "97d59163b320300f"
-            ]
-        ]
-    },
-    {
-        "id": "8b953adaedc4ba31",
-        "type": "function",
-        "z": "25ffbbb24f15449a",
-        "g": "b8d5b7ce365938b3",
-        "name": "p805-dual-analyzation",
-        "func": "/**\n * GUO 雙色溫解析器（0x03 Read Holding Registers）\n * - 從 msg.devices 動態讀取設備配置\n * - 輸出：MQTT 訊息陣列 [{ topic, payload }, ...]\n */\n\n// === Channel 對應 byte 映射（雙色溫）===\nconst channelByteMap = {\n    \"a\": { type: \"dual\", brightnessByte: 44, colortempByte: 46 },\n    \"b\": { type: \"dual\", brightnessByte: 48, colortempByte: 50 },\n    \"c\": { type: \"dual\", brightnessByte: 52, colortempByte: 54 },\n    \"d\": { type: \"dual\", brightnessByte: 56, colortempByte: 58 },\n};\n\n\n\n// === 主程式開始 ===\nconst buffer = msg.payload;\n\n// === 基礎防錯檢查 ===\nif (!Buffer.isBuffer(buffer)) return null;\nif (buffer.length !== 61) return null;\n\nconst id = buffer[0];\nconst funcCode = buffer[1];\nconst byteCount = buffer[2];\n\nif (funcCode !== 0x03 || byteCount !== 56) return null;\n\n// === 取得設備清單 ===\nconst devices = msg.devices || [];\n\n// === 色溫轉換：Modbus 數值 → mired（HA 使用）===\nfunction getColortempHA(device , modbusValue) {\n    const MIRED_MIN = device.colortemp_minimum;\n    const MIRED_MAX = device.colortemp_maximum;\n    return Math.round(MIRED_MAX + modbusValue / 255 * (MIRED_MIN - MIRED_MAX));\n}\n\nconst targetDevices = devices.filter(d =>\n    d.brand === \"guo\" && d.model === \"p805\" && d.type === \"dual\" && d.module_id == id\n);\nconst mqttMsgs = [];\n\nfor (const device of targetDevices) {\n    const channel = device.channel;\n    const info = channelByteMap[channel];\n    if (!info) continue;\n\n    const brightness = buffer[info.brightnessByte];\n    const deviceID = device.module_id;\n    const stateTopic = `homeassistant/light/dual/${deviceID}/${channel}`;\n    const setTopic = `${stateTopic}/set`;\n\n    if (brightness === 0) {\n        mqttMsgs.push({ topic: `${stateTopic}/state`, payload: \"OFF\" });\n    } else {\n        mqttMsgs.push(\n            { topic: `${stateTopic}/state`, payload: \"ON\" },\n            { topic: `${stateTopic}/brightness`, payload: brightness.toString() },\n            { topic: `${setTopic}/brightness`, payload: brightness.toString() }\n        );\n    }\n\n    // 無論亮度為何都送 colortemp\n    const colortempModbus = buffer[info.colortempByte];\n    const colortempMired = getColortempHA(colortempModbus);\n\n    mqttMsgs.push(\n        { topic: `${stateTopic}/colortemp`, payload: colortempMired.toString() },\n        { topic: `${setTopic}/colortemp`, payload: colortempMired.toString() }\n    );\n}\n\nif (mqttMsgs.length === 0) return null;\nreturn [mqttMsgs];",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1840,
-        "y": 520,
-        "wires": [
-            [
-                "97d59163b320300f"
-            ]
-        ]
-    },
-    {
-        "id": "20910aa8165396c3",
-        "type": "function",
-        "z": "25ffbbb24f15449a",
-        "g": "4e06b458d208739c",
-        "name": "sunwave scene 解析",
-        "func": "/**\n * S402 Scene Event 解析（接收端）\n *\n * Input:\n *   msg.payload = Buffer(8)\n *   [FE, 06, 08, 20, VALUE_H, VALUE_L, CRC_H, CRC_L]\n *\n * Output:\n *   msg.topic   = homeassistant/scene/sunwave/event\n *   msg.payload = { scene: 1~20, group: 1~96 | \"all\" }\n */\n\nlet buf = msg.payload;\n\nif (!Buffer.isBuffer(buf) || buf.length !== 8) return null;\n\n// 解構（CRC 不處理）\nlet [deviceId, command, addrH, addrL, valueH, valueL] = buf;\n\n// 基本封包判斷\nif (\n    deviceId !== 0xFE ||\n    command  !== 0x06 ||\n    addrH    !== 0x08 ||\n    addrL    !== 0x20\n) {\n    return null;\n}\n\n// ===== 解析 VALUE =====\n\n// scene: bit[14..8] → valueH 的低 7 bits\nlet scene = valueH & 0x7F;   // 0b0111_1111\n\nif (scene < 1 || scene > 20) return null;\n\n// group\nlet group;\nif (valueL === 0xFF) {\n    group = \"all\";\n} else if (valueL >= 1 && valueL <= 96) {\n    group = valueL;\n} else {\n    return null;\n}\n\nmsg.topic = \"homeassistant/scene/sunwave/event\";\nmsg.payload = { scene, group };\n\nnode.status({\n    fill: \"green\",\n    shape: \"dot\",\n    text: `scene=${scene}, group=${group}`\n});\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1840,
-        "y": 680,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f309c347af7f92e4",
-        "type": "function",
-        "z": "25ffbbb24f15449a",
-        "g": "4e06b458d208739c",
-        "name": "{ \"scene\": 3, \"group\": 12 }",
-        "func": "// scene = 3, group = 12\n// VALUE_H = 0x03\n// VALUE_L = 0x0C\n\nmsg.payload = Buffer.from([\n    0xFE,\n    0x06,\n    0x08,\n    0x20,\n    0x03,\n    0x0C,\n//    0x00,\n//    0x00\n]);\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1550,
-        "y": 640,
-        "wires": [
-            [
-                "6b6d674f134a9096",
-                "20910aa8165396c3"
-            ]
-        ]
-    },
-    {
-        "id": "9a9e7dd31f81048f",
-        "type": "function",
-        "z": "25ffbbb24f15449a",
-        "g": "4e06b458d208739c",
-        "name": "{ \"scene\": 10, \"group\": \"all\" }",
-        "func": "// scene = 10, group = all (0xFF)\n\nmsg.payload = Buffer.from([\n    0xFE,\n    0x06,\n    0x08,\n    0x20,\n    0x0A,\n    0xFF,\n    0x00,\n    0x00\n]);\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1560,
-        "y": 680,
-        "wires": [
-            [
-                "6b6d674f134a9096",
-                "20910aa8165396c3"
-            ]
-        ]
-    },
-    {
-        "id": "b84bbc10c3165ed8",
-        "type": "inject",
-        "z": "25ffbbb24f15449a",
-        "g": "4e06b458d208739c",
-        "name": "",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 1375,
-        "y": 640,
-        "wires": [
-            [
-                "f309c347af7f92e4"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "b0502a7d969aa2e3",
-        "type": "inject",
-        "z": "25ffbbb24f15449a",
-        "g": "4e06b458d208739c",
-        "name": "",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 1375,
-        "y": 680,
-        "wires": [
-            [
-                "9a9e7dd31f81048f"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "6b6d674f134a9096",
-        "type": "function",
-        "z": "25ffbbb24f15449a",
-        "g": "4e06b458d208739c",
-        "name": "CRC Builder",
-        "func": "/**\n * CRC Builder - CRC16(Modbus)\n */\n\nconst payload = msg.payload;\n\nif (!Buffer.isBuffer(payload)) return null;\n\nconst [crcLo, crcHi] = crc16Modbus(payload);\n\nmsg.payload = Buffer.concat([payload, Buffer.from([crcLo, crcHi])]);\nreturn msg;\n\nfunction crc16Modbus(buf) {\n    let crc = 0xffff;\n\n    for (let i = 0; i < buf.length; i++) {\n        crc ^= buf[i];\n\n        for (let j = 0; j < 8; j++) {\n            if (crc & 0x0001) crc = (crc >> 1) ^ 0xa001;\n            else crc >>= 1;\n        }\n    }\n\n    return [crc & 0xff, (crc >> 8) & 0xff];\n}",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1810,
-        "y": 640,
-        "wires": [
-            [
-                "fc3e0ce1b0de4f67"
             ]
         ]
     },
@@ -2224,7 +1409,7 @@
         "z": "25ffbbb24f15449a",
         "g": "3bb2b1de12efb006",
         "name": "get devices",
-        "func": "msg.devices = [\n    { brand: \"guo\", model: \"p805\", type: \"single\", module_id: \"1\", channel: \"1\", name: \"p1\", tcp: \"1\", bright_minimum: 3 },\n    { brand: \"guo\", model: \"p805\", type: \"single\", module_id: \"1\", channel: \"2\", name: \"p2\", tcp: \"1\", bright_minimum: 3 },\n    { brand: \"guo\", model: \"p805\", type: \"single\", module_id: \"1\", channel: \"3\", name: \"p3\", tcp: \"1\", bright_minimum: 3 },\n    { brand: \"guo\", model: \"p805\", type: \"single\", module_id: \"1\", channel: \"4\", name: \"p4\", tcp: \"1\", bright_minimum: 3 },\n    { brand: \"guo\", model: \"p805\", type: \"single\", module_id: \"1\", channel: \"5\", name: \"p5\", tcp: \"1\", bright_minimum: 3 },\n    { brand: \"guo\", model: \"p805\", type: \"single\", module_id: \"1\", channel: \"6\", name: \"p6\", tcp: \"1\", bright_minimum: 3 },\n    { brand: \"guo\", model: \"p805\", type: \"single\", module_id: \"1\", channel: \"7\", name: \"p7\", tcp: \"1\", bright_minimum: 3 },\n    { brand: \"guo\", model: \"p805\", type: \"single\", module_id: \"1\", channel: \"8\", name: \"p8\", tcp: \"1\", bright_minimum: 3 },\n\n    { brand: \"guo\", model: \"p805\", type: \"dual\", module_id: \"1\", channel: \"a\", name: \"pa\", tcp: \"1\", bright_minimum: 1, colortemp_minimum: 154, colortemp_maximum: 370 },\n    { brand: \"guo\", model: \"p805\", type: \"dual\", module_id: \"1\", channel: \"b\", name: \"pb\", tcp: \"1\", bright_minimum: 3, colortemp_minimum: 154, colortemp_maximum: 370 },\n    { brand: \"guo\", model: \"p805\", type: \"dual\", module_id: \"1\", channel: \"c\", name: \"pc\", tcp: \"1\", bright_minimum: 3, colortemp_minimum: 154, colortemp_maximum: 370 },\n    { brand: \"guo\", model: \"p805\", type: \"dual\", module_id: \"1\", channel: \"d\", name: \"pd\", tcp: \"1\", bright_minimum: 3, colortemp_minimum: 154, colortemp_maximum: 370 },\n\n    { brand: \"guo\", model: \"p805\", type: \"rgbw\", module_id: \"1\", channel: \"2\", name: \"rgbw1\", tcp: \"1\", bright_minimum: 3 },\n];\nreturn msg;\n",
+        "func": "msg.devices = [\n    { brand: \"guo\", model: \"p805\", type: \"single\", module_id: \"1\", channel: \"1\", name: \"p1-1\", tcp: \"1\", bright_minimum: 3 },\n    { brand: \"guo\", model: \"p805\", type: \"single\", module_id: \"1\", channel: \"2\", name: \"p1-2\", tcp: \"1\", bright_minimum: 3 },\n    { brand: \"guo\", model: \"p805\", type: \"single\", module_id: \"1\", channel: \"3\", name: \"p1-3\", tcp: \"1\", bright_minimum: 3 },\n    { brand: \"guo\", model: \"p805\", type: \"single\", module_id: \"1\", channel: \"4\", name: \"p1-4\", tcp: \"1\", bright_minimum: 3 },\n    { brand: \"guo\", model: \"p805\", type: \"single\", module_id: \"1\", channel: \"5\", name: \"p1-5\", tcp: \"1\", bright_minimum: 3 },\n    { brand: \"guo\", model: \"p805\", type: \"single\", module_id: \"1\", channel: \"6\", name: \"p1-6\", tcp: \"1\", bright_minimum: 3 },\n    { brand: \"guo\", model: \"p805\", type: \"single\", module_id: \"1\", channel: \"7\", name: \"p1-7\", tcp: \"1\", bright_minimum: 3 },\n    { brand: \"guo\", model: \"p805\", type: \"single\", module_id: \"1\", channel: \"8\", name: \"p1-8\", tcp: \"1\", bright_minimum: 3 },\n\n    { brand: \"guo\", model: \"p805\", type: \"dual\", module_id: \"1\", channel: \"a\", name: \"p1-a\", tcp: \"1\", bright_minimum: 1, colortemp_minimum: 154, colortemp_maximum: 370 },\n    { brand: \"guo\", model: \"p805\", type: \"dual\", module_id: \"1\", channel: \"b\", name: \"p1-b\", tcp: \"1\", bright_minimum: 3, colortemp_minimum: 154, colortemp_maximum: 370 },\n    { brand: \"guo\", model: \"p805\", type: \"dual\", module_id: \"1\", channel: \"c\", name: \"p1-c\", tcp: \"1\", bright_minimum: 3, colortemp_minimum: 154, colortemp_maximum: 370 },\n    { brand: \"guo\", model: \"p805\", type: \"dual\", module_id: \"1\", channel: \"d\", name: \"p1-d\", tcp: \"1\", bright_minimum: 3, colortemp_minimum: 154, colortemp_maximum: 370 },\n\n    { brand: \"guo\", model: \"p805\", type: \"rgbw\", module_id: \"1\", channel: \"2\", name: \"p1-rgbw1\", tcp: \"1\", bright_minimum: 3 },\n\n    { brand: \"guo\", model: \"p305\", type: \"single\", module_id: \"11\", channel: \"1\", name: \"p11-1\", tcp: \"1\", bright_minimum: 3 },\n    { brand: \"guo\", model: \"p305\", type: \"single\", module_id: \"11\", channel: \"2\", name: \"p11-2\", tcp: \"1\", bright_minimum: 3 },\n    { brand: \"guo\", model: \"p305\", type: \"single\", module_id: \"11\", channel: \"3\", name: \"p11-3\", tcp: \"1\", bright_minimum: 3 },\n];\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2303,7 +1488,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 170,
-        "y": 900,
+        "y": 760,
         "wires": [
             [
                 "7057899962d92834"
@@ -2324,7 +1509,7 @@
         "finalize": "",
         "libs": [],
         "x": 420,
-        "y": 900,
+        "y": 760,
         "wires": [
             [
                 "2b414e245e9511e3"
@@ -2342,7 +1527,7 @@
             "ac34a11a46a983ce"
         ],
         "x": 505,
-        "y": 900,
+        "y": 760,
         "wires": []
     },
     {
@@ -2359,7 +1544,7 @@
         "finalize": "",
         "libs": [],
         "x": 500,
-        "y": 960,
+        "y": 820,
         "wires": []
     },
     {
@@ -2377,7 +1562,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 210,
-        "y": 960,
+        "y": 820,
         "wires": [
             [
                 "36288117e46711c0"
@@ -2399,7 +1584,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 170,
-        "y": 1060,
+        "y": 920,
         "wires": [
             [
                 "027a905c8955d424"
@@ -2420,7 +1605,7 @@
         "finalize": "",
         "libs": [],
         "x": 420,
-        "y": 1060,
+        "y": 920,
         "wires": [
             [
                 "775e544672f53167"
@@ -2438,7 +1623,7 @@
             "ac34a11a46a983ce"
         ],
         "x": 505,
-        "y": 1060,
+        "y": 920,
         "wires": []
     },
     {
@@ -2456,7 +1641,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 200,
-        "y": 1180,
+        "y": 1040,
         "wires": [
             [
                 "ec4c4fc818f4de83"
@@ -2477,7 +1662,7 @@
         "finalize": "",
         "libs": [],
         "x": 480,
-        "y": 1180,
+        "y": 1040,
         "wires": []
     },
     {
@@ -2495,7 +1680,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 200,
-        "y": 1120,
+        "y": 980,
         "wires": [
             [
                 "9abd97f17c2702b2"
@@ -2516,53 +1701,8 @@
         "finalize": "",
         "libs": [],
         "x": 480,
-        "y": 1120,
+        "y": 980,
         "wires": []
-    },
-    {
-        "id": "c5d8f3b76e06a79f",
-        "type": "function",
-        "z": "25ffbbb24f15449a",
-        "g": "b8d5b7ce365938b3",
-        "name": "get devices",
-        "func": "msg.devices = global.get(\"devices\");\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1535,
-        "y": 400,
-        "wires": [
-            [
-                "8e94355ecf37cf89"
-            ]
-        ],
-        "icon": "font-awesome/fa-database",
-        "l": false
-    },
-    {
-        "id": "5a5862c726ce8ce1",
-        "type": "function",
-        "z": "25ffbbb24f15449a",
-        "g": "4d424757f8e799a1",
-        "name": "tcp_queue_name",
-        "func": "msg.tcp = \"_tcp1\";\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1535,
-        "y": 100,
-        "wires": [
-            [
-                "f48bdd13ef2d7bbb"
-            ]
-        ],
-        "l": false
     },
     {
         "id": "572c85a69a669a86",
@@ -2580,7 +1720,7 @@
         "correl": "",
         "expiry": "",
         "broker": "751ec40a6956d4f9",
-        "x": 1065,
+        "x": 1095,
         "y": 100,
         "wires": [],
         "l": false
@@ -2596,99 +1736,9 @@
         "links": [
             "ac34a11a46a983ce"
         ],
-        "x": 1105,
+        "x": 1095,
         "y": 160,
         "wires": []
-    },
-    {
-        "id": "0f9d2f93542801cf",
-        "type": "function",
-        "z": "25ffbbb24f15449a",
-        "g": "212a06610902d8a2",
-        "name": "郭先生_解析回應數據",
-        "func": "// === Channel 對應 byte 映射（根據通道決定亮度與色溫位元）===\nconst channelByteMap = {\n    // 雙色溫通道（含亮度與色溫）\n    \"a\": { type: \"dual\", brightnessByte: 44, colortempByte: 46 },\n    \"b\": { type: \"dual\", brightnessByte: 48, colortempByte: 50 },\n    \"c\": { type: \"dual\", brightnessByte: 52, colortempByte: 54 },\n    \"d\": { type: \"dual\", brightnessByte: 56, colortempByte: 58 },\n\n    // 單色溫通道（只有亮度）\n    \"1\": { type: \"single\", brightnessByte: 4 },\n    \"2\": { type: \"single\", brightnessByte: 6 },\n    \"3\": { type: \"single\", brightnessByte: 8 },\n    \"4\": { type: \"single\", brightnessByte: 10 },\n    \"5\": { type: \"single\", brightnessByte: 12 },\n    \"6\": { type: \"single\", brightnessByte: 14 }\n};\n\n// === 燈具配置清單 ===\n// 每筆燈具包含名稱、Modbus ID、通道編號（channel）\nconst lights = [\n    // 雙色溫燈具\n    { name: \"1-1&1-2\", id: 11, channel: \"a\" },\n    { name: \"1-3&1-4\", id: 11, channel: \"b\" },\n    { name: \"1-5&1-6\", id: 11, channel: \"c\" },\n    { name: \"1-7&1-8\", id: 11, channel: \"d\" },\n    { name: \"1-9&1-10\", id: 12, channel: \"a\" },\n    { name: \"1-11&1-12\", id: 12, channel: \"b\" },\n    { name: \"1-13&1-14\", id: 12, channel: \"c\" },\n    { name: \"1-15&1-16\", id: 12, channel: \"d\" },\n    { name: \"1-21&1-22\", id: 13, channel: \"c\" },\n    { name: \"1-23&1-24\", id: 13, channel: \"d\" },\n    { name: \"1-27&1-28\", id: 14, channel: \"a\" },\n    { name: \"1-29&1-30\", id: 14, channel: \"b\" },\n    // 單色溫燈具\n    { name: \"1-17\", id: 13, channel: \"1\" },\n    { name: \"1-18\", id: 13, channel: \"2\" },\n    { name: \"1-19\", id: 13, channel: \"3\" },\n    { name: \"1-20\", id: 13, channel: \"4\" },\n    { name: \"1-31\", id: 14, channel: \"5\" },\n    { name: \"1-32\", id: 14, channel: \"6\" }\n];\n\n// === 色溫轉換：Modbus 數值 → mired（HA 使用）===\nfunction getColortempHA(modbusValue) {\n    const MIRED_MIN = 175;  // 最暖（黃光）\n    const MIRED_MAX = 454;  // 最冷（白光）\n    return Math.round(MIRED_MAX + modbusValue / 255 * (MIRED_MIN - MIRED_MAX));\n}\n\n// === Modbus CRC 驗證函式 ===\nfunction verifyCRC(buf) {\n    let crc = 0xFFFF;\n    for (let i = 0; i < buf.length - 2; i++) {\n        crc ^= buf[i];\n        for (let j = 0; j < 8; j++) {\n            crc = (crc & 1) ? ((crc >> 1) ^ 0xA001) : (crc >> 1);\n        }\n    }\n    const crcLow = crc & 0xFF;\n    const crcHigh = (crc >> 8) & 0xFF;\n    return (crcLow === buf[buf.length - 2]) && (crcHigh === buf[buf.length - 1]);\n}\n\n// === 主程式開始 ===\nconst buffer = msg.payload;\n\n// === 基礎防錯檢查 ===\nif (!Buffer.isBuffer(buffer)) return null;       // 資料必須是 Buffer\nif (buffer.length !== 61) return null;           // 長度需為 61 bytes（固定格式）\n\nconst id = buffer[0];                            // 裝置 ID\nconst funcCode = buffer[1];                      // 功能碼，應為 0x03\nconst byteCount = buffer[2];                     // 資料長度，應為 56\n\nif (funcCode !== 0x03 || byteCount !== 56) return null;\nif (!verifyCRC(buffer)) return null;             // CRC 驗證失敗則丟棄\n\n// === 開始解析每筆燈具 ===\nconst mqttMsgs = [];\n\nfor (const light of lights) {\n    if (light.id !== id) continue;  // 僅處理此封包對應的 ID\n\n    const info = channelByteMap[light.channel];\n    if (!info) continue;  // channel 無對應定義則跳過\n\n    const deviceID = light.id;\n    const channel = light.channel;\n    const type = info.type;\n    const brightness = buffer[info.brightnessByte];\n\n    // 組合 MQTT topic 路徑\n    const stateTopic = `homeassistant/light/${type}/${deviceID}/${channel}`;\n    const setTopic = `${stateTopic}/set`;\n\n    // === 雙色溫燈具處理邏輯 ===\n    if (type === \"dual\") {\n        // ✅ 根據亮度決定 ON/OFF 狀態，並決定是否送亮度指令\n        if (brightness === 0) {\n            mqttMsgs.push({ topic: `${stateTopic}/state`, payload: \"OFF\" });\n        } else {\n            mqttMsgs.push(\n                { topic: `${stateTopic}/state`, payload: \"ON\" },\n                { topic: `${stateTopic}/brightness`, payload: brightness.toString() },\n                { topic: `${setTopic}/brightness`, payload: brightness.toString() }\n            );\n        }\n\n        // ✅ 無論亮度為何都送 colortemp\n        const colortempModbus = buffer[info.colortempByte];\n        const colortempMired = getColortempHA(colortempModbus);\n\n        mqttMsgs.push(\n            { topic: `${stateTopic}/colortemp`, payload: colortempMired.toString() },\n            { topic: `${setTopic}/colortemp`, payload: colortempMired.toString() }\n        );\n    }\n\n    // === 單色溫燈具處理邏輯 ===\n    if (type === \"single\") {\n        if (brightness === 0) {\n            mqttMsgs.push({ topic: `${stateTopic}/state`, payload: \"OFF\" });\n        } else {\n            mqttMsgs.push(\n                { topic: `${stateTopic}/state`, payload: \"ON\" },\n                { topic: `${stateTopic}/brightness`, payload: brightness.toString() },\n                { topic: `${setTopic}/brightness`, payload: brightness.toString() }\n            );\n        }\n    }\n}\n\n// === 輸出所有組合的 MQTT 訊息陣列 ===\nreturn [mqttMsgs];\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1640,
-        "y": 1340,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2d3fcedb7d41602c",
-        "type": "inject",
-        "z": "25ffbbb24f15449a",
-        "g": "212a06610902d8a2",
-        "name": "60s輪詢",
-        "props": [],
-        "repeat": "60",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 1360,
-        "y": 1260,
-        "wires": [
-            [
-                "9c064643cb85fbf1"
-            ]
-        ]
-    },
-    {
-        "id": "8ab50252e2aa4af3",
-        "type": "comment",
-        "z": "25ffbbb24f15449a",
-        "g": "212a06610902d8a2",
-        "name": "郭先生 輪詢 / feedback",
-        "info": "",
-        "x": 1380,
-        "y": 1200,
-        "wires": []
-    },
-    {
-        "id": "9c064643cb85fbf1",
-        "type": "function",
-        "z": "25ffbbb24f15449a",
-        "g": "212a06610902d8a2",
-        "name": "設備清單",
-        "func": "// 設定設備清單\nvar devices = context.get('devices') || [11,12,13,14]; // 默認設備清單\n\n// 為每個設備生成一條消息\nvar msgs = devices.map(deviceID => {\n    return {\n        deviceID: deviceID // 將設備 ID 添加到消息中\n    };\n});\n\n// 返回所有消息\nreturn [msgs];\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1540,
-        "y": 1260,
-        "wires": [
-            [
-                "a3cc316117465bce"
-            ]
-        ]
-    },
-    {
-        "id": "a3cc316117465bce",
-        "type": "function",
-        "z": "25ffbbb24f15449a",
-        "g": "212a06610902d8a2",
-        "name": "詢問地址",
-        "func": "// 獲取當前設備 ID\nvar deviceID = msg.deviceID;\n\n// 設定參數\nvar functionCode = 0x03;           // 功能碼：讀取保持暫存器\nvar startAddress = 520;            // 起始地址\nvar quantity = 28;                  // 讀取數量\n\n// 將起始地址和數量轉換為兩個字節\nvar startAddressHigh = (startAddress >> 8) & 0xFF; // 高位\nvar startAddressLow = startAddress & 0xFF;        // 低位\nvar quantityHigh = (quantity >> 8) & 0xFF;        // 高位\nvar quantityLow = quantity & 0xFF;               // 低位\n\n// 組裝指令\nvar message = [\n    deviceID,            // 設備地址\n    functionCode,        // 功能碼\n    startAddressHigh,    // 起始地址高位\n    startAddressLow,     // 起始地址低位\n    quantityHigh,        // 數量高位\n    quantityLow          // 數量低位\n];\n\n// 計算 CRC 校驗\nvar crc = calculateCRC(message);\nmessage.push(crc[0]); // CRC 低位\nmessage.push(crc[1]); // CRC 高位\n\n// 將指令存入 msg.payload\nmsg.payload = Buffer.from(message);\nreturn msg;\n\n// CRC 計算函式\nfunction calculateCRC(data) {\n    var crc = 0xFFFF;\n    for (var i = 0; i < data.length; i++) {\n        crc ^= data[i];\n        for (var j = 0; j < 8; j++) {\n            if ((crc & 0x0001) !== 0) {\n                crc >>= 1;\n                crc ^= 0xA001;\n            } else {\n                crc >>= 1;\n            }\n        }\n    }\n    return [crc & 0xFF, (crc >> 8) & 0xFF]; // 返回 CRC 低位和高位\n}",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1700,
-        "y": 1260,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "7057899962d92834",
@@ -2704,7 +1754,7 @@
             }
         ],
         "x": 325,
-        "y": 900,
+        "y": 760,
         "wires": [
             [
                 "f0da866cf6ca6481"
@@ -2726,7 +1776,7 @@
             }
         ],
         "x": 405,
-        "y": 960,
+        "y": 820,
         "wires": [
             [
                 "74bcb66417d85b4b"
@@ -2748,7 +1798,7 @@
             }
         ],
         "x": 325,
-        "y": 1060,
+        "y": 920,
         "wires": [
             [
                 "3d5682eaa5ce1d6e"
@@ -2770,7 +1820,7 @@
             }
         ],
         "x": 385,
-        "y": 1120,
+        "y": 980,
         "wires": [
             [
                 "252b87542c398f4f"
@@ -2792,7 +1842,7 @@
             }
         ],
         "x": 385,
-        "y": 1180,
+        "y": 1040,
         "wires": [
             [
                 "92a419d91e26ed2d"
@@ -2925,7 +1975,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 200,
-        "y": 1340,
+        "y": 1200,
         "wires": [
             [
                 "522d18be85c3d65c"
@@ -2947,7 +1997,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 180,
-        "y": 1400,
+        "y": 1260,
         "wires": [
             [
                 "d059eaae48c6aa76"
@@ -2969,7 +2019,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 170,
-        "y": 1280,
+        "y": 1140,
         "wires": [
             [
                 "c758e9a139261a1a"
@@ -2982,7 +2032,7 @@
         "z": "25ffbbb24f15449a",
         "g": "378be3e1a478bb13",
         "name": "寫指令",
-        "func": "// ===================== 主流程 =====================\nconst topic = String(msg.topic || \"\");\nconst parts = topic.split(\"/\");\nconst slaveId = Number(parts[3]);\nconst channel = parts[4];\n\nif (!Number.isInteger(slaveId) || slaveId <= 0) return null;\n\n// === 從 device 配置中取得設備資訊 ===\nconst devices = msg.devices || [];\nconst device = devices.find(d => d.module_id == slaveId && d.channel == channel && d.type === 'rgbw');\nif (!device) return null;\n\nlet brightness = flow.get(`rgbw_${slaveId}_brightness`);\nlet rgbString = flow.get(`rgbw_${slaveId}_rgb`);\nif (typeof brightness !== 'number') brightness = 255;\nif (typeof rgbString !== 'string') rgbString = '255,255,255';\n\n// --- 解析 RGB 字串 ---\nconst rgbArray = rgbString.split(',').map(val => parseInt(val.trim(), 10));\nlet [r_ha, g_ha, b_ha] = rgbArray;\nif (![r_ha,g_ha,b_ha].every(v => Number.isFinite(v))) return null;\n\n// --- WRGB 演算法 ---\nlet w = Math.min(r_ha, g_ha, b_ha);\nlet r = r_ha - w;\nlet g = g_ha - w;\nlet b = b_ha - w;\nlet sum = r + g + b + w;\nif (sum === 0) sum = 1;\nlet whiteBrightness = Math.round(brightness * w / sum);\nlet redBrightness = Math.round(brightness * r / sum);\nlet greenBrightness = Math.round(brightness * g / sum);\nlet blueBrightness = Math.round(brightness * b / sum);\n\nnode.warn(`???`);\n\nif (msg.payload == 'OFF') {\n    let cmd = Buffer.from([slaveId, 0x10, 0x01, 0xf4, 0x00, 0x04, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00]);\n    msg.payload = cmd;\n    return msg;\n} else if (msg.payload == 'ON') {\n    let cmd = Buffer.from([slaveId, 0x10, 0x01, 0xf4, 0x00, 0x04, 0x08, 0x00, redBrightness, 0x00, greenBrightness, 0x00, blueBrightness, 0x00, whiteBrightness]);\n    msg.payload = cmd;\n    return msg;\n}\nreturn null;",
+        "func": "// ===================== 主流程 =====================\nconst topic = String(msg.topic || \"\");\nconst parts = topic.split(\"/\");\nconst slaveId = Number(parts[3]);\nconst channel = parts[4];\n\nif (!Number.isInteger(slaveId) || slaveId <= 0) return null;\n\n// === 從 device 配置中取得設備資訊 ===\nconst devices = msg.devices || [];\nconst device = devices.find(d => d.module_id == slaveId && d.channel == channel && d.type === 'rgbw');\nif (!device) return null;\n\nlet brightness = flow.get(`rgbw_${slaveId}_brightness`);\nlet rgbString = flow.get(`rgbw_${slaveId}_rgb`);\nif (typeof brightness !== 'number') brightness = 255;\nif (typeof rgbString !== 'string') rgbString = '255,255,255';\n\n// --- 解析 RGB 字串 ---\nconst rgbArray = rgbString.split(',').map(val => parseInt(val.trim(), 10));\nlet [r_ha, g_ha, b_ha] = rgbArray;\nif (![r_ha,g_ha,b_ha].every(v => Number.isFinite(v))) return null;\n\n// --- WRGB 演算法 ---\nlet w = Math.min(r_ha, g_ha, b_ha);\nlet r = r_ha - w;\nlet g = g_ha - w;\nlet b = b_ha - w;\nlet sum = r + g + b + w;\nif (sum === 0) sum = 1;\nlet whiteBrightness = Math.round(brightness * w / sum);\nlet redBrightness = Math.round(brightness * r / sum);\nlet greenBrightness = Math.round(brightness * g / sum);\nlet blueBrightness = Math.round(brightness * b / sum);\n\nif (msg.payload == 'OFF') {\n    let cmd = Buffer.from([slaveId, 0x10, 0x01, 0xf4, 0x00, 0x04, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00]);\n    msg.payload = cmd;\n    return msg;\n} else if (msg.payload == 'ON') {\n    let cmd = Buffer.from([slaveId, 0x10, 0x01, 0xf4, 0x00, 0x04, 0x08, 0x00, redBrightness, 0x00, greenBrightness, 0x00, blueBrightness, 0x00, whiteBrightness]);\n    msg.payload = cmd;\n    return msg;\n}\nreturn null;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2990,11 +2040,10 @@
         "finalize": "",
         "libs": [],
         "x": 410,
-        "y": 1280,
+        "y": 1140,
         "wires": [
             [
-                "2aef872636634761",
-                "28f6cb1512806e5e"
+                "2aef872636634761"
             ]
         ]
     },
@@ -3012,7 +2061,7 @@
         "finalize": "",
         "libs": [],
         "x": 480,
-        "y": 1340,
+        "y": 1200,
         "wires": []
     },
     {
@@ -3029,7 +2078,7 @@
         "finalize": "",
         "libs": [],
         "x": 460,
-        "y": 1400,
+        "y": 1260,
         "wires": []
     },
     {
@@ -3043,7 +2092,7 @@
             "ac34a11a46a983ce"
         ],
         "x": 485,
-        "y": 1280,
+        "y": 1140,
         "wires": []
     },
     {
@@ -3060,7 +2109,7 @@
             }
         ],
         "x": 385,
-        "y": 1340,
+        "y": 1200,
         "wires": [
             [
                 "c106f1fa3380a71f"
@@ -3082,7 +2131,7 @@
             }
         ],
         "x": 355,
-        "y": 1400,
+        "y": 1260,
         "wires": [
             [
                 "4d7b97e06c0813f1"
@@ -3104,7 +2153,7 @@
             }
         ],
         "x": 325,
-        "y": 1280,
+        "y": 1140,
         "wires": [
             [
                 "05672b2a300983e5"
@@ -3113,21 +2162,576 @@
         "l": false
     },
     {
-        "id": "28f6cb1512806e5e",
-        "type": "debug",
+        "id": "6ada135e2238b47d",
+        "type": "function",
         "z": "25ffbbb24f15449a",
-        "g": "378be3e1a478bb13",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 600,
-        "y": 1280,
+        "name": "{ \"scene\": 3, \"group\": 12 }",
+        "func": "// scene = 3, group = 12\n// VALUE_H = 0x03\n// VALUE_L = 0x0C\n\nmsg.payload = Buffer.from([\n    0xFE,\n    0x06,\n    0x08,\n    0x20,\n    0x03,\n    0x0C,\n//    0x00,\n//    0x00\n]);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 400,
+        "wires": [
+            [
+                "362b7c22073016e2"
+            ]
+        ]
+    },
+    {
+        "id": "4ff695fbd2f4b9ba",
+        "type": "inject",
+        "z": "25ffbbb24f15449a",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 925,
+        "y": 400,
+        "wires": [
+            [
+                "6ada135e2238b47d"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "362b7c22073016e2",
+        "type": "function",
+        "z": "25ffbbb24f15449a",
+        "name": "CRC Builder",
+        "func": "/**\n * CRC Builder - CRC16(Modbus)\n */\n\nconst payload = msg.payload;\n\nif (!Buffer.isBuffer(payload)) return null;\n\nconst [crcLo, crcHi] = crc16Modbus(payload);\n\nmsg.payload = Buffer.concat([payload, Buffer.from([crcLo, crcHi])]);\nreturn msg;\n\nfunction crc16Modbus(buf) {\n    let crc = 0xffff;\n\n    for (let i = 0; i < buf.length; i++) {\n        crc ^= buf[i];\n\n        for (let j = 0; j < 8; j++) {\n            if (crc & 0x0001) crc = (crc >> 1) ^ 0xa001;\n            else crc >>= 1;\n        }\n    }\n\n    return [crc & 0xff, (crc >> 8) & 0xff];\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1205,
+        "y": 400,
+        "wires": [
+            [
+                "e3fadb1bef108cd5"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "e3fadb1bef108cd5",
+        "type": "link out",
+        "z": "25ffbbb24f15449a",
+        "name": "scen_test_out",
+        "mode": "link",
+        "links": [
+            "8e86285537a7ad65"
+        ],
+        "x": 1245,
+        "y": 400,
         "wires": []
+    },
+    {
+        "id": "9fd8b146ddf7be0b",
+        "type": "link in",
+        "z": "25ffbbb24f15449a",
+        "g": "705bbc9ccd5a368c",
+        "name": "CRC Builder",
+        "links": [
+            "d84ab5f2c9b7c8bc"
+        ],
+        "x": 1355,
+        "y": 100,
+        "wires": [
+            [
+                "49e2eb1e1731f7a9"
+            ]
+        ]
+    },
+    {
+        "id": "24f74fdf58e963b8",
+        "type": "function",
+        "z": "25ffbbb24f15449a",
+        "g": "705bbc9ccd5a368c",
+        "name": "unlock",
+        "func": "// =======================================\n// 收到回覆 → 解鎖（基於TCP動態管理）\n// =======================================\n\n// 1. 只要是 Buffer，就當作「有回覆」\nif (!Buffer.isBuffer(msg.payload)) {\n    return null;\n}\n\n// 2. 取得TCP標識符，預設為'_default'\nconst tcpId = msg.tcp || '_default';\n\n// 3. 清掉 timeout（如果還存在）\nconst timer = flow.get(`currentTimeout${tcpId}`);\nif (timer) {\n    clearTimeout(timer);\n    flow.set(`currentTimeout${tcpId}`, null);\n}\n\n// 4. 解鎖對應的TCP連接\nglobal.set(`waitingReply${tcpId}`, false);\n\n// 5. 狀態提示（方便你看流程在跑）\nnode.status({\n    fill: \"green\",\n    shape: \"dot\",\n    text: `收到回覆，解鎖 ${tcpId}`\n});\n\n// 6. 主動觸發發送流程，送下一筆\nmsg.tcp = tcpId; // 確保TCP ID傳遞\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1710,
+        "y": 140,
+        "wires": [
+            [
+                "02da5e8bdc2b8b98"
+            ]
+        ]
+    },
+    {
+        "id": "02da5e8bdc2b8b98",
+        "type": "function",
+        "z": "25ffbbb24f15449a",
+        "g": "705bbc9ccd5a368c",
+        "name": "發送流程 + timeout",
+        "func": "// =======================================\n// 發送流程 + Timeout（基於TCP動態管理）\n// =======================================\n\n// 超時時間（ms）\n// 建議實務值：600 ~ 1000\nconst TIMEOUT_MS = 800;\n\n// 1. 取得TCP標識符，預設為'_default'\nconst tcpId = msg.tcp || '_default';\n\n// 2. 取得對應TCP的佇列\nlet queue = global.get(`commandsQueue${tcpId}`);\nif (!Array.isArray(queue) || queue.length === 0) {\n  // 沒指令就什麼都不做\n  return null;\n}\n\n// 3. 若正在等回覆 → 絕對不能再送\nif (global.get(`waitingReply${tcpId}`)) {\n  return null;\n}\n\n// 4. 取出 FIFO 第一筆\nconst cmd = queue.shift();\nglobal.set(`commandsQueue${tcpId}`, queue);\n\n// 5. 上鎖（代表「現在有一筆正在飛」）\nglobal.set(`waitingReply${tcpId}`, true);\n\n// 6. 設定 timeout：\n//    無論發生什麼事，只要時間到就放行\nconst timer = setTimeout(() => {\n\n  // 解除鎖定\n  global.set(`waitingReply${tcpId}`, false);\n  flow.set(`currentTimeout${tcpId}`, null);\n\n  // 顯示狀態（方便現場 debug）\n  node.status({\n    fill: \"yellow\",\n    shape: \"ring\",\n    text: `timeout 放行 ${tcpId}`\n  });\n\n  // 主動觸發自己，再送下一筆\n  node.send([null, { _kick: true, tcp: tcpId, reason: \"timeout\" }]);\n}, TIMEOUT_MS);\n\n// 記住 timer，讓「收到回覆」能清掉\nflow.set(`currentTimeout${tcpId}`, timer);\n\n// 7. 將指令送到 tcp out\n//    注意：這裡只負責送，不關心結果\nreturn { payload: cmd, tcp: tcpId };",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// 部署節點後，此處添加的代碼將運行一次。 \n// 部署初始化：自動清空所有TCP的 queue & 解鎖，避免部署後卡死\n\n// 清理已知的TCP連接\nconst tcpIds = ['_default', '_tcp1', '_tcp2', '_tcp3'];\n\ntcpIds.forEach(tcpId => {\n    global.set(`commandsQueue${tcpId}`, []);\n    global.set(`waitingReply${tcpId}`, false);\n    flow.set(`currentCmd${tcpId}`, null);\n    flow.set(`currentTimeout${tcpId}`, null);\n});\n\n// 向下兼容：也清理舊的全局變量\nglobal.set(`commandsQueue`, []);\nglobal.set(`waitingReply`, false);\nflow.set(`currentCmd`, null);\nflow.set(`currentTimeout`, null);\n\nnode.status({ fill: \"grey\", shape: \"ring\", text: \"部署後已重置所有TCP\" });",
+        "finalize": "// 節點正在停止或重新部署時，將運行此處添加的代碼。 \n// 停止或重新部署時清掉所有TCP的計時器\n\n// 清理已知的TCP連接\nconst tcpIds = ['_default', '_tcp1', '_tcp2', '_tcp3'];\n\ntcpIds.forEach(tcpId => {\n    const t = flow.get(`currentTimeout${tcpId}`);\n    if (t) {\n        clearTimeout(t);\n    }\n    flow.set(`currentTimeout${tcpId}`, null);\n    global.set(`commandsQueue${tcpId}`, []);\n    global.set(`waitingReply${tcpId}`, false);\n    flow.set(`currentCmd${tcpId}`, null);\n});\n\n// 向下兼容：也清理舊的全局變量\nconst t = flow.get(`currentTimeout`);\nif (t) {\n    clearTimeout(t);\n}\nflow.set(`currentTimeout`, null);\nglobal.set(`commandsQueue`, []);\nglobal.set(`waitingReply`, false);\nflow.set(`currentCmd`, null);",
+        "libs": [],
+        "x": 1890,
+        "y": 100,
+        "wires": [
+            [
+                "6ae3ff78e035ed0f"
+            ],
+            [
+                "1d8afa712d9219a1"
+            ]
+        ],
+        "info": "【功能說明】\n此節點負責：\n1. 從 commandsQueue 佇列中取出下一筆指令\n2. 發送至 TCP 節點\n3. 啟動 Retry 機制（預設最多重送 2 次）\n4. 若成功回應 → 由 handle_reply 解鎖佇列\n5. 若失敗超時 → 自動解鎖並觸發下一筆送出\n"
+    },
+    {
+        "id": "f48bdd13ef2d7bbb",
+        "type": "function",
+        "z": "25ffbbb24f15449a",
+        "g": "705bbc9ccd5a368c",
+        "name": "加入佇列",
+        "func": "// =======================================\n// 加入佇列（基於TCP動態管理）\n// =======================================\n\n// 1. 取得TCP標識符，預設為'_default'\nconst tcpId = msg.tcp || '_default';\n\n// 2. 取得對應TCP的佇列（不存在就建立）\nlet queue = global.get(`commandsQueue${tcpId}`);\nif (!Array.isArray(queue)) {\n    queue = [];\n}\n\n// 3. 取得指令內容\n//    預期是 Buffer；若是 Array 自動轉 Buffer\nlet cmd = msg.payload;\nif (Array.isArray(cmd)) {\n    cmd = Buffer.from(cmd);\n}\n\n// 4. 只接受 Buffer，其他型態直接忽略\nif (!Buffer.isBuffer(cmd)) {\n    return null;\n}\n\n// 5. 推進對應TCP的 FIFO 佇列\nqueue.push(cmd);\nglobal.set(`commandsQueue${tcpId}`, queue);\n\n// 6. 若目前沒有在等回覆，主動喚醒發送流程\n//    payload 內容不重要，只是觸發用\nif (!global.get(`waitingReply${tcpId}`)) {\n    return { payload: null, tcp: tcpId };\n}\n\n// 7. 若正在等回覆，就單純入列，不再觸發\nreturn null;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1700,
+        "y": 100,
+        "wires": [
+            [
+                "02da5e8bdc2b8b98"
+            ]
+        ]
+    },
+    {
+        "id": "e1cbaea278d9c030",
+        "type": "tcp in",
+        "z": "25ffbbb24f15449a",
+        "g": "705bbc9ccd5a368c",
+        "name": "",
+        "server": "client",
+        "host": "192.168.1.208",
+        "port": "502",
+        "datamode": "stream",
+        "datatype": "buffer",
+        "newline": "",
+        "topic": "",
+        "trim": false,
+        "base64": false,
+        "tls": "",
+        "x": 1445,
+        "y": 140,
+        "wires": [
+            [
+                "56558e29143917d0",
+                "cd006fa0cbc4766c"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "6ae3ff78e035ed0f",
+        "type": "tcp out",
+        "z": "25ffbbb24f15449a",
+        "g": "705bbc9ccd5a368c",
+        "name": "",
+        "host": "192.168.1.208",
+        "port": "502",
+        "beserver": "client",
+        "base64": false,
+        "end": false,
+        "tls": "",
+        "x": 2025,
+        "y": 100,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "5a5862c726ce8ce1",
+        "type": "function",
+        "z": "25ffbbb24f15449a",
+        "g": "4d424757f8e799a1",
+        "name": "tcp_queue_name",
+        "func": "msg.tcp = \"_tcp1\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1595,
+        "y": 100,
+        "wires": [
+            [
+                "f48bdd13ef2d7bbb"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "cd006fa0cbc4766c",
+        "type": "function",
+        "z": "25ffbbb24f15449a",
+        "g": "4d424757f8e799a1",
+        "name": "tcp_queue_name",
+        "func": "msg.tcp = \"_tcp1\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1595,
+        "y": 140,
+        "wires": [
+            [
+                "24f74fdf58e963b8"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "49e2eb1e1731f7a9",
+        "type": "function",
+        "z": "25ffbbb24f15449a",
+        "g": "705bbc9ccd5a368c",
+        "name": "CRC Builder",
+        "func": "/**\n * CRC Builder - CRC16(Modbus)\n */\n\nconst payload = msg.payload;\n\nif (!Buffer.isBuffer(payload)) return null;\n\nconst [crcLo, crcHi] = crc16Modbus(payload);\n\nmsg.payload = Buffer.concat([payload, Buffer.from([crcLo, crcHi])]);\nreturn msg;\n\nfunction crc16Modbus(buf) {\n    let crc = 0xffff;\n\n    for (let i = 0; i < buf.length; i++) {\n        crc ^= buf[i];\n\n        for (let j = 0; j < 8; j++) {\n            if (crc & 0x0001) crc = (crc >> 1) ^ 0xa001;\n            else crc >>= 1;\n        }\n    }\n\n    return [crc & 0xff, (crc >> 8) & 0xff];\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1470,
+        "y": 100,
+        "wires": [
+            [
+                "5a5862c726ce8ce1"
+            ]
+        ]
+    },
+    {
+        "id": "56558e29143917d0",
+        "type": "link out",
+        "z": "25ffbbb24f15449a",
+        "g": "705bbc9ccd5a368c",
+        "name": "link out 10",
+        "mode": "link",
+        "links": [
+            "8e86285537a7ad65"
+        ],
+        "x": 1525,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "97d59163b320300f",
+        "type": "mqtt out",
+        "z": "25ffbbb24f15449a",
+        "g": "b8d5b7ce365938b3",
+        "name": "",
+        "topic": "",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "751ec40a6956d4f9",
+        "x": 2225,
+        "y": 420,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "8e94355ecf37cf89",
+        "type": "function",
+        "z": "25ffbbb24f15449a",
+        "g": "b8d5b7ce365938b3",
+        "name": "分流器",
+        "func": "/**\n * 分流器：根據 msg.devices 中的 model 和 type 分流到對應的解析節點\n * 輸出 1: p404-single\n * 輸出 2: p404-dual\n * 輸出 3: p210-single\n * 輸出 4: p210-dual\n * 輸出 5: sunwave-scene\n * 輸出 6: guo-single\n * 輸出 7: guo-dual\n */\n\n// 防護檢查\nif (!msg.payload || !Buffer.isBuffer(msg.payload)) return null;\n\n// === 路由配置 ===\nconst DEVICE_ROUTES = {\n    \"p404-single\": 0,\n    \"p404-dual\": 1,\n    \"p210-single\": 2,\n    \"p210-dual\": 3,\n    \"sunwave-scene\": 4,\n    \"p805-single\": 5,\n    \"p805-dual\": 6,\n    \"p805-rgbw\": 7,\n    \"p305-single\": 5,\n    \"p305-dual\": 6,\n    \"p305-rgbw\": 7,\n};\n\n// === 工具函數 ===\nfunction isSunwaveScene(buf) {\n    return buf.length === 8 && \n           buf[0] === 0xFE && \n           buf[1] === 0x06 && \n           buf[2] === 0x08 && \n           buf[3] === 0x20;\n}\n\nfunction createRouteOutput(targetIndex) {\n    const outputs = new Array(7).fill(null);\n    outputs[targetIndex] = msg;\n    return outputs;\n}\n\n// === 場景檢測 ===\nif (isSunwaveScene(msg.payload)) {\n    return createRouteOutput(DEVICE_ROUTES[\"sunwave-scene\"]);\n}\n\n// === 設備分流邏輯 ===\nif (msg.payload.length < 2 || msg.payload[1] !== 0x03) {\n    return null; // 只收 Read Holding Registers 回傳\n}\n\nconst slaveId = msg.payload[0];\nconst devices = msg.devices || [];\nconst matchedDevice = devices.find(d => d.module_id == slaveId);\n\nif (!matchedDevice) {\n    node.warn(`找不到設備: slaveId=${slaveId}, devices=${JSON.stringify(devices.map(d => ({id: d.module_id, model: d.model, type: d.type})))}`);    \n    return null;\n}\n\nconst deviceKey = `${matchedDevice.model}-${matchedDevice.type}`;\n\nnode.warn(deviceKey);\n\nconst routeIndex = DEVICE_ROUTES[deviceKey];\n\nif (routeIndex === undefined) {\n    node.warn(`找不到路由: deviceKey=${deviceKey}, 可用路由=${Object.keys(DEVICE_ROUTES)}`);\n    return null;\n}\n\nnode.status({ fill: \"green\", shape: \"dot\", text: `路由到: ${deviceKey} (輸出${routeIndex + 1})` });\nreturn createRouteOutput(routeIndex);",
+        "outputs": 8,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1650,
+        "y": 400,
+        "wires": [
+            [
+                "096378aa0e988429"
+            ],
+            [
+                "73384aeeb9b9b0ed"
+            ],
+            [
+                "f89a379dd163acda"
+            ],
+            [
+                "9867cd434b817462"
+            ],
+            [
+                "6c55a102a9eaccd2"
+            ],
+            [
+                "008ed86d23fea30d"
+            ],
+            [
+                "8b953adaedc4ba31"
+            ],
+            [
+                "0a7fbc4d6bc27e15"
+            ]
+        ]
+    },
+    {
+        "id": "096378aa0e988429",
+        "type": "function",
+        "z": "25ffbbb24f15449a",
+        "g": "b8d5b7ce365938b3",
+        "name": "p404-single-analyzation",
+        "func": "/**\n * P404 單色溫解析器（0x03 Read Holding Registers）\n * - 從 msg.devices 動態讀取設備配置\n * - 輸出：MQTT 訊息陣列 [{ topic, payload }, ...]\n */\n\n// === Channel 對應 Register 映射（單色溫）===\nconst CHANNEL_REG_MAP = {\n    \"1\": { brightnessReg: 0 },\n    \"2\": { brightnessReg: 1 },\n    \"3\": { brightnessReg: 2 },\n    \"4\": { brightnessReg: 3 },\n};\n\n// === 讀取指定 register 的 Low Byte ===\nfunction readRegLo(frame, regIndex) {\n    const dataStart = 3;\n    const idx = dataStart + regIndex * 2 + 1;\n    if (idx >= frame.length - 2) return null;\n    return frame[idx];\n}\n\n// ========================= 主程式 =========================\nconst frame = msg.payload;\nif (!Buffer.isBuffer(frame)) return null;\nif (frame.length < 5) return null;\n\nconst slaveId = frame[0];\nconst funcCode = frame[1];\nconst byteCount = frame[2];\n\nif (funcCode !== 0x03) return null;\nif (byteCount !== 4 && byteCount !== 8) return null;\n\nconst expectedLen = 3 + byteCount + 2;\nif (frame.length !== expectedLen) return null;\n\nconst regCount = byteCount / 2;\nconst devices = msg.devices || [];\n\n// 篩選出 P404 單色溫且符合當前 slaveId 的設備\nconst targetDevices = devices.filter(d => \n    d.model === \"p404\" && d.type === \"single\" && d.module_id == slaveId\n);\n\nconst mqttMsgs = [];\n\nfor (const device of targetDevices) {\n    const ch = device.channel;\n    const info = CHANNEL_REG_MAP[ch];\n    if (!info) continue;\n    if (info.brightnessReg >= regCount) continue;\n\n    const brightness = readRegLo(frame, info.brightnessReg);\n    if (brightness === null) continue;\n\n    const baseTopic = `homeassistant/light/single/${slaveId}/${ch}`;\n    const setTopic = `${baseTopic}/set`;\n\n    if (brightness === 0) {\n        mqttMsgs.push({ topic: `${baseTopic}/state`, payload: \"OFF\" });\n    } else {\n        mqttMsgs.push(\n            { topic: `${baseTopic}/state`, payload: \"ON\" },\n            { topic: `${baseTopic}/brightness`, payload: String(brightness) },\n            { topic: `${setTopic}/brightness`, payload: String(brightness) }\n        );\n    }\n}\n\nif (mqttMsgs.length === 0) return null;\nreturn [mqttMsgs];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1940,
+        "y": 280,
+        "wires": [
+            [
+                "97d59163b320300f"
+            ]
+        ]
+    },
+    {
+        "id": "73384aeeb9b9b0ed",
+        "type": "function",
+        "z": "25ffbbb24f15449a",
+        "g": "b8d5b7ce365938b3",
+        "name": "p404-dual-analyzation",
+        "func": "/**\n * P404 雙色溫解析器（0x03 Read Holding Registers）\n * - 從 msg.devices 動態讀取設備配置\n * - 輸出：MQTT 訊息陣列 [{ topic, payload }, ...]\n */\n\n// === Channel 對應 Register 映射（雙色溫）===\nconst CHANNEL_REG_MAP = {\n    \"a\": { brightnessReg: 0, colortempReg: 1 },\n    \"b\": { brightnessReg: 2, colortempReg: 3 },\n};\n\n// === 色溫轉換：Modbus(0~100) → mired(HA) ===\nfunction toMired(ctPercent) {\n    const MIRED_MIN = 154; // 6494 K\n    const MIRED_MAX = 370; // 2703 K\n    return Math.round(MIRED_MAX + (ctPercent / 100) * (MIRED_MIN - MIRED_MAX));\n}\n\n// === 讀取指定 register 的 Low Byte ===\nfunction readRegLo(frame, regIndex) {\n    const dataStart = 3;\n    const idx = dataStart + regIndex * 2 + 1;\n    if (idx >= frame.length - 2) return null;\n    return frame[idx];\n}\n\n// ========================= 主程式 =========================\nconst frame = msg.payload;\nif (!Buffer.isBuffer(frame)) return null;\nif (frame.length < 5) return null;\n\nconst slaveId = frame[0];\nconst funcCode = frame[1];\nconst byteCount = frame[2];\n\nif (funcCode !== 0x03) return null;\nif (byteCount !== 4 && byteCount !== 8) return null;\n\nconst expectedLen = 3 + byteCount + 2;\nif (frame.length !== expectedLen) return null;\n\nconst regCount = byteCount / 2;\nconst devices = msg.devices || [];\n\n// 篩選出 P404 雙色溫且符合當前 slaveId 的設備\nconst targetDevices = devices.filter(d => \n    d.model === \"p404\" && d.type === \"dual\" && d.module_id == slaveId\n);\n\nconst mqttMsgs = [];\n\nfor (const device of targetDevices) {\n    const ch = device.channel;\n    const info = CHANNEL_REG_MAP[ch];\n    if (!info) continue;\n    if (info.brightnessReg >= regCount) continue;\n\n    const brightness = readRegLo(frame, info.brightnessReg);\n    if (brightness === null) continue;\n\n    const baseTopic = `homeassistant/light/dual/${slaveId}/${ch}`;\n    const setTopic = `${baseTopic}/set`;\n\n    if (brightness === 0) {\n        mqttMsgs.push({ topic: `${baseTopic}/state`, payload: \"OFF\" });\n    } else {\n        mqttMsgs.push(\n            { topic: `${baseTopic}/state`, payload: \"ON\" },\n            { topic: `${baseTopic}/brightness`, payload: String(brightness) },\n            { topic: `${setTopic}/brightness`, payload: String(brightness) }\n        );\n\n        // 雙色溫有 colortemp\n        if (info.colortempReg < regCount) {\n            const ctRaw = readRegLo(frame, info.colortempReg);\n            if (ctRaw !== null) {\n                const mired = toMired(ctRaw);\n                mqttMsgs.push(\n                    { topic: `${baseTopic}/colortemp`, payload: String(mired) },\n                    { topic: `${setTopic}/colortemp`, payload: String(mired) }\n                );\n            }\n        }\n    }\n}\n\nif (mqttMsgs.length === 0) return null;\nreturn [mqttMsgs];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1930,
+        "y": 320,
+        "wires": [
+            [
+                "97d59163b320300f"
+            ]
+        ]
+    },
+    {
+        "id": "f89a379dd163acda",
+        "type": "function",
+        "z": "25ffbbb24f15449a",
+        "g": "b8d5b7ce365938b3",
+        "name": "p210-single-analyzation",
+        "func": "/**\n * P210 單色溫解析器（0x03 Read Holding Registers）\n * - 從 msg.devices 動態讀取設備配置\n * - 輸出：MQTT 訊息陣列 [{ topic, payload }, ...]\n */\n\n// === Channel 對應 Register 映射（單色溫）===\nconst CHANNEL_REG_MAP = {\n    \"1\": { brightnessReg: 0 },\n    \"2\": { brightnessReg: 1 },\n    \"3\": { brightnessReg: 2 },\n    \"4\": { brightnessReg: 3 },\n};\n\n// === 讀取指定 register 的 Low Byte ===\nfunction readRegLo(frame, regIndex) {\n    const dataStart = 3;\n    const idx = dataStart + regIndex * 2 + 1;\n    if (idx >= frame.length - 2) return null;\n    return frame[idx];\n}\n\n// ========================= 主程式 =========================\nconst frame = msg.payload;\nif (!Buffer.isBuffer(frame)) return null;\nif (frame.length < 5) return null;\n\nconst slaveId = frame[0];\nconst funcCode = frame[1];\nconst byteCount = frame[2];\n\nif (funcCode !== 0x03) return null;\nif (byteCount !== 4 && byteCount !== 8) return null;\n\nconst expectedLen = 3 + byteCount + 2;\nif (frame.length !== expectedLen) return null;\n\nconst regCount = byteCount / 2;\nconst devices = msg.devices || [];\n\n// 篩選出 P210 單色溫且符合當前 slaveId 的設備\nconst targetDevices = devices.filter(d => \n    d.model === \"p210\" && d.type === \"single\" && d.module_id == slaveId\n);\n\nconst mqttMsgs = [];\n\nfor (const device of targetDevices) {\n    const ch = device.channel;\n    const info = CHANNEL_REG_MAP[ch];\n    if (!info) continue;\n    if (info.brightnessReg >= regCount) continue;\n\n    const brightness = readRegLo(frame, info.brightnessReg);\n    if (brightness === null) continue;\n\n    const baseTopic = `homeassistant/light/single/${slaveId}/${ch}`;\n    const setTopic = `${baseTopic}/set`;\n\n    if (brightness === 0) {\n        mqttMsgs.push({ topic: `${baseTopic}/state`, payload: \"OFF\" });\n    } else {\n        mqttMsgs.push(\n            { topic: `${baseTopic}/state`, payload: \"ON\" },\n            { topic: `${baseTopic}/brightness`, payload: String(brightness) },\n            { topic: `${setTopic}/brightness`, payload: String(brightness) }\n        );\n    }\n}\n\nif (mqttMsgs.length === 0) return null;\nreturn [mqttMsgs];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1940,
+        "y": 360,
+        "wires": [
+            [
+                "97d59163b320300f"
+            ]
+        ]
+    },
+    {
+        "id": "9867cd434b817462",
+        "type": "function",
+        "z": "25ffbbb24f15449a",
+        "g": "b8d5b7ce365938b3",
+        "name": "p210-dual-analyzation",
+        "func": "/**\n * P210 雙色溫解析器（0x03 Read Holding Registers）\n * - 從 msg.devices 動態讀取設備配置\n * - 輸出：MQTT 訊息陣列 [{ topic, payload }, ...]\n */\n\n// === Channel 對應 Register 映射（雙色溫）===\nconst CHANNEL_REG_MAP = {\n    \"a\": { brightnessReg: 0, colortempReg: 1 },\n    \"b\": { brightnessReg: 2, colortempReg: 3 },\n};\n\n// === 色溫轉換：Modbus(0~100) → mired(HA) ===\nfunction toMired(ctPercent) {\n    const MIRED_MIN = 154; // 6494 K\n    const MIRED_MAX = 370; // 2703 K\n    return Math.round(MIRED_MAX + (ctPercent / 100) * (MIRED_MIN - MIRED_MAX));\n}\n\n// === 讀取指定 register 的 Low Byte ===\nfunction readRegLo(frame, regIndex) {\n    const dataStart = 3;\n    const idx = dataStart + regIndex * 2 + 1;\n    if (idx >= frame.length - 2) return null;\n    return frame[idx];\n}\n\n// ========================= 主程式 =========================\nconst frame = msg.payload;\nif (!Buffer.isBuffer(frame)) return null;\nif (frame.length < 5) return null;\n\nconst slaveId = frame[0];\nconst funcCode = frame[1];\nconst byteCount = frame[2];\n\nif (funcCode !== 0x03) return null;\nif (byteCount !== 4 && byteCount !== 8) return null;\n\nconst expectedLen = 3 + byteCount + 2;\nif (frame.length !== expectedLen) return null;\n\nconst regCount = byteCount / 2;\nconst devices = msg.devices || [];\n\n// 篩選出 P210 雙色溫且符合當前 slaveId 的設備\nconst targetDevices = devices.filter(d => \n    d.model === \"p210\" && d.type === \"dual\" && d.module_id == slaveId\n);\n\nconst mqttMsgs = [];\n\nfor (const device of targetDevices) {\n    const ch = device.channel;\n    const info = CHANNEL_REG_MAP[ch];\n    if (!info) continue;\n    if (info.brightnessReg >= regCount) continue;\n\n    const brightness = readRegLo(frame, info.brightnessReg);\n    if (brightness === null) continue;\n\n    const baseTopic = `homeassistant/light/dual/${slaveId}/${ch}`;\n    const setTopic = `${baseTopic}/set`;\n\n    if (brightness === 0) {\n        mqttMsgs.push({ topic: `${baseTopic}/state`, payload: \"OFF\" });\n    } else {\n        mqttMsgs.push(\n            { topic: `${baseTopic}/state`, payload: \"ON\" },\n            { topic: `${baseTopic}/brightness`, payload: String(brightness) },\n            { topic: `${setTopic}/brightness`, payload: String(brightness) }\n        );\n\n        // 雙色溫有 colortemp\n        if (info.colortempReg < regCount) {\n            const ctRaw = readRegLo(frame, info.colortempReg);\n            if (ctRaw !== null) {\n                const mired = toMired(ctRaw);\n                mqttMsgs.push(\n                    { topic: `${baseTopic}/colortemp`, payload: String(mired) },\n                    { topic: `${setTopic}/colortemp`, payload: String(mired) }\n                );\n            }\n        }\n    }\n}\n\nif (mqttMsgs.length === 0) return null;\nreturn [mqttMsgs];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1930,
+        "y": 400,
+        "wires": [
+            [
+                "97d59163b320300f"
+            ]
+        ]
+    },
+    {
+        "id": "8e86285537a7ad65",
+        "type": "link in",
+        "z": "25ffbbb24f15449a",
+        "g": "b8d5b7ce365938b3",
+        "name": "FeedBack",
+        "links": [
+            "56558e29143917d0",
+            "e3fadb1bef108cd5"
+        ],
+        "x": 1355,
+        "y": 400,
+        "wires": [
+            [
+                "fc3e0ce1b0de4f67"
+            ]
+        ]
+    },
+    {
+        "id": "fc3e0ce1b0de4f67",
+        "type": "function",
+        "z": "25ffbbb24f15449a",
+        "g": "b8d5b7ce365938b3",
+        "name": "CRC Checker",
+        "func": "/**\n * CRC16 驗證過濾器（Modbus）\n * - msg.payload 必須是 Buffer\n * - CRC 正確才往下傳，否則丟棄\n */\n\nconst frame = msg.payload;\n\nif (!Buffer.isBuffer(frame)) return null;\nif (frame.length < 3) return null; // 至少要有 1 byte 資料 + 2 byte CRC\n\nif (!verifyCrc16Modbus(frame)) return null;\n\nnode.status({ fill: \"green\", shape: \"dot\", text: \"CRC OK\" });\nmsg.source = \"feedback\"; // 標記來源\nreturn msg;\n\nfunction verifyCrc16Modbus(buf) {\n    const crc = crc16Modbus(buf.slice(0, -2));\n    const crcLo = crc & 0xff;\n    const crcHi = (crc >> 8) & 0xff;\n\n    return (crcLo === buf[buf.length - 2]) && (crcHi === buf[buf.length - 1]);\n}\n\nfunction crc16Modbus(buf) {\n    let crc = 0xffff;\n\n    for (let i = 0; i < buf.length; i++) {\n        crc ^= buf[i];\n\n        for (let j = 0; j < 8; j++) {\n            if (crc & 0x0001) crc = (crc >> 1) ^ 0xa001;\n            else crc >>= 1;\n        }\n    }\n\n    return crc;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1460,
+        "y": 400,
+        "wires": [
+            [
+                "c5d8f3b76e06a79f"
+            ]
+        ]
+    },
+    {
+        "id": "6c55a102a9eaccd2",
+        "type": "function",
+        "z": "25ffbbb24f15449a",
+        "g": "b8d5b7ce365938b3",
+        "name": "sunwave-scene-analyzation",
+        "func": "/**\n * Sunwave Scene Event 解析（整合到分流器）\n *\n * Input:\n *   msg.payload = Buffer(8)\n *   [FE, 06, 08, 20, VALUE_H, VALUE_L, CRC_H, CRC_L]\n *\n * Output:\n *   msg.topic   = homeassistant/scene/sunwave/event\n *   msg.payload = { scene: 1~20, group: 1~96 | \"all\" }\n */\n\nlet buf = msg.payload;\n\nif (!Buffer.isBuffer(buf) || buf.length !== 8) return null;\n\n// 解構（CRC 不處理，因為已經在上層驗證過）\nlet [deviceId, command, addrH, addrL, valueH, valueL] = buf;\n\n// 基本封包判斷（這個檢查在分流器已經做過，但為了安全再檢查一次）\nif (\n    deviceId !== 0xFE ||\n    command  !== 0x06 ||\n    addrH    !== 0x08 ||\n    addrL    !== 0x20\n) {\n    return null;\n}\n\n// ===== 解析 VALUE =====\n\n// scene: bit[14..8] → valueH 的低 7 bits\nlet scene = valueH & 0x7F;   // 0b0111_1111\n\nif (scene < 1 || scene > 20) return null;\n\n// group\nlet group;\nif (valueL === 0xFF) {\n    group = \"all\";\n} else if (valueL >= 1 && valueL <= 96) {\n    group = valueL;\n} else {\n    return null;\n}\n\nmsg.topic = \"homeassistant/scene/sunwave/event\";\nmsg.payload = { scene, group };\n\nnode.status({\n    fill: \"green\",\n    shape: \"dot\",\n    text: `scene=${scene}, group=${group}`\n});\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1950,
+        "y": 440,
+        "wires": [
+            [
+                "97d59163b320300f"
+            ]
+        ]
+    },
+    {
+        "id": "c5d8f3b76e06a79f",
+        "type": "function",
+        "z": "25ffbbb24f15449a",
+        "g": "b8d5b7ce365938b3",
+        "name": "get devices",
+        "func": "msg.devices = global.get(\"devices\");\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1565,
+        "y": 400,
+        "wires": [
+            [
+                "8e94355ecf37cf89"
+            ]
+        ],
+        "icon": "font-awesome/fa-database",
+        "l": false
+    },
+    {
+        "id": "008ed86d23fea30d",
+        "type": "function",
+        "z": "25ffbbb24f15449a",
+        "g": "b8d5b7ce365938b3",
+        "name": "p805-single-analyzation",
+        "func": "/**\n * GUO 單色溫解析器（0x03 Read Holding Registers）\n * - 從 msg.devices 動態讀取設備配置\n * - 輸出：MQTT 訊息陣列 [{ topic, payload }, ...]\n */\n\n// === Channel 對應 byte 映射（單色溫）===\nconst channelByteMap = {\n    \"1\": { type: \"single\", brightnessByte: 4 },\n    \"2\": { type: \"single\", brightnessByte: 6 },\n    \"3\": { type: \"single\", brightnessByte: 8 },\n    \"4\": { type: \"single\", brightnessByte: 10 },\n    \"5\": { type: \"single\", brightnessByte: 12 },\n    \"6\": { type: \"single\", brightnessByte: 14 },\n    \"7\": { type: \"single\", brightnessByte: 16 },\n    \"8\": { type: \"single\", brightnessByte: 18 }\n};\n\n// === 主程式開始 ===\nconst buffer = msg.payload;\n\n// === 基礎防錯檢查 ===\nif (!Buffer.isBuffer(buffer)) return null;\nif (buffer.length !== 61) return null;\n\nconst id = buffer[0];\nconst funcCode = buffer[1];\nconst byteCount = buffer[2];\n\nif (funcCode !== 0x03 || byteCount !== 56) return null;\n\n// === 取得設備清單 ===\nconst devices = msg.devices || [];\nconst targetDevices = devices.filter(d => \n    d.brand === \"guo\" && (d.model === \"p805\" || d.model === \"p305\") && d.type === \"single\" && d.module_id == id\n);\n\nconst mqttMsgs = [];\n\nfor (const device of targetDevices) {\n    const channel = device.channel;\n    const info = channelByteMap[channel];\n    if (!info) continue;\n\n    const brightness = buffer[info.brightnessByte];\n    const deviceID = device.module_id;\n    const stateTopic = `homeassistant/light/single/${deviceID}/${channel}`;\n    const setTopic = `${stateTopic}/set`;\n\n    if (brightness === 0) {\n        mqttMsgs.push({ topic: `${stateTopic}/state`, payload: \"OFF\" });\n    } else {\n        mqttMsgs.push(\n            { topic: `${stateTopic}/state`, payload: \"ON\" },\n            { topic: `${stateTopic}/brightness`, payload: brightness.toString() },\n            { topic: `${setTopic}/brightness`, payload: brightness.toString() }\n        );\n    }\n}\n\nif (mqttMsgs.length === 0) return null;\nreturn [mqttMsgs];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1940,
+        "y": 480,
+        "wires": [
+            [
+                "97d59163b320300f"
+            ]
+        ]
+    },
+    {
+        "id": "8b953adaedc4ba31",
+        "type": "function",
+        "z": "25ffbbb24f15449a",
+        "g": "b8d5b7ce365938b3",
+        "name": "p805-dual-analyzation",
+        "func": "/**\n * GUO 雙色溫解析器（0x03 Read Holding Registers）\n * - 從 msg.devices 動態讀取設備配置\n * - 輸出：MQTT 訊息陣列 [{ topic, payload }, ...]\n */\n\n// === Channel 對應 byte 映射（雙色溫）===\nconst channelByteMap = {\n    \"a\": { type: \"dual\", brightnessByte: 44, colortempByte: 46 },\n    \"b\": { type: \"dual\", brightnessByte: 48, colortempByte: 50 },\n    \"c\": { type: \"dual\", brightnessByte: 52, colortempByte: 54 },\n    \"d\": { type: \"dual\", brightnessByte: 56, colortempByte: 58 },\n};\n\n\n\n// === 主程式開始 ===\nconst buffer = msg.payload;\n\n// === 基礎防錯檢查 ===\nif (!Buffer.isBuffer(buffer)) return null;\nif (buffer.length !== 61) return null;\n\nconst id = buffer[0];\nconst funcCode = buffer[1];\nconst byteCount = buffer[2];\n\nif (funcCode !== 0x03 || byteCount !== 56) return null;\n\n// === 取得設備清單 ===\nconst devices = msg.devices || [];\n\n// === 色溫轉換：Modbus 數值 → mired（HA 使用）===\nfunction getColortempHA(device , modbusValue) {\n    const MIRED_MIN = device.colortemp_minimum;\n    const MIRED_MAX = device.colortemp_maximum;\n    return Math.round(MIRED_MAX + modbusValue / 255 * (MIRED_MIN - MIRED_MAX));\n}\n\nconst targetDevices = devices.filter(d =>\n    d.brand === \"guo\" && d.model === \"p805\" && d.type === \"dual\" && d.module_id == id\n);\nconst mqttMsgs = [];\n\nfor (const device of targetDevices) {\n    const channel = device.channel;\n    const info = channelByteMap[channel];\n    if (!info) continue;\n\n    const brightness = buffer[info.brightnessByte];\n    const deviceID = device.module_id;\n    const stateTopic = `homeassistant/light/dual/${deviceID}/${channel}`;\n    const setTopic = `${stateTopic}/set`;\n\n    if (brightness === 0) {\n        mqttMsgs.push({ topic: `${stateTopic}/state`, payload: \"OFF\" });\n    } else {\n        mqttMsgs.push(\n            { topic: `${stateTopic}/state`, payload: \"ON\" },\n            { topic: `${stateTopic}/brightness`, payload: brightness.toString() },\n            { topic: `${setTopic}/brightness`, payload: brightness.toString() }\n        );\n    }\n\n    // 無論亮度為何都送 colortemp\n    const colortempModbus = buffer[info.colortempByte];\n    const colortempMired = getColortempHA(colortempModbus);\n\n    mqttMsgs.push(\n        { topic: `${stateTopic}/colortemp`, payload: colortempMired.toString() },\n        { topic: `${setTopic}/colortemp`, payload: colortempMired.toString() }\n    );\n}\n\nif (mqttMsgs.length === 0) return null;\nreturn [mqttMsgs];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1930,
+        "y": 520,
+        "wires": [
+            [
+                "97d59163b320300f"
+            ]
+        ]
+    },
+    {
+        "id": "0a7fbc4d6bc27e15",
+        "type": "function",
+        "z": "25ffbbb24f15449a",
+        "g": "b8d5b7ce365938b3",
+        "name": "p805-rgbw-analyzation",
+        "func": "/**\n * RGBW（四色）控制：產生四筆 Modbus 指令\n * 亮度決定總輸出，RGBW 各色比例由 payload 決定\n * guo 品牌：直接使用 0~255\n * sunwave 品牌：使用 0~100\n */\n\nconst BRIGHTNESS_TIME = 0x05;\n\nconst CHANNEL_REGISTER_MAP = {\n    \"1\": [0x0830, 0x0831, 0x0832, 0x0833], // R, G, B, W\n    \"2\": [0x0834, 0x0835, 0x0836, 0x0837],\n};\n\n// === Topic 解析與檢查 ===\nconst topic = String(msg.topic || \"\");\nconst parts = topic.split(\"/\");\n\nif (parts.length !== 6) return null;\nif (parts[0] !== \"homeassistant\") return null;\nif (parts[1] !== \"light\") return null;\nif (parts[2] !== \"rgbw\") return null;\nif (parts[5] !== \"set\") return null;\n\nconst slaveId = Number(parts[3]);\nconst channel = parts[4];\n\nif (!Number.isInteger(slaveId) || slaveId <= 0) return null;\n\nconst regs = CHANNEL_REGISTER_MAP[channel];\nif (!regs) return null;\n\n// === 從 device 配置中取得設備資訊 ===\nconst device = msg.devices.find(d => d.module_id == slaveId && d.channel == channel);\nif (!device) return null;\n\nconst brightMinimum = device.bright_minimum || 0;\nconst isGuo = (device.brand === \"guo\");\nconst defaultBrightness = isGuo ? 255 : 100;\nconst maxBrightness = isGuo ? 255 : 100;\n\n\n// === 解析 payload（格式：{\"r\":255,\"g\":128,\"b\":64,\"w\":32,\"state\":\"ON\"}）===\nlet r, g, b, w, state;\nif (typeof msg.payload === 'object' && msg.payload !== null) {\n    r = msg.payload.r;\n    g = msg.payload.g;\n    b = msg.payload.b;\n    w = msg.payload.w;\n    state = msg.payload.state;\n}\nif ([r, g, b, w].some(v => typeof v !== 'number')) return null;\nif (typeof state !== 'string') return null;\n\nconst isOn = (state.toUpperCase() === \"ON\");\n\n// === 亮度處理（使用快取，沒有則用預設）===\nconst brightnessKey = `rgbw_${slaveId}_brightness`;\nlet brightness = flow.get(brightnessKey);\nif (typeof brightness !== \"number\") brightness = defaultBrightness;\n\n// 應用最低亮度限制\nbrightness = Math.max(brightMinimum, brightness);\nbrightness = Math.min(maxBrightness, Math.max(0, brightness));\n\n// === 亮度曲線處理 ===\nlet outputValue = brightness;\nif (isOn && brightness > 0) {\n    const curve = device.brightness_curve || \"linear\";\n    if (curve === \"square\") {\n        const normalized = brightness / maxBrightness;\n        const curved = Math.pow(normalized, 2);\n        outputValue = Math.round(curved * maxBrightness);\n        outputValue = Math.max(brightMinimum, outputValue);\n    }\n}\n\n// === 計算各色輸出 ===\nconst total = r + g + b + w;\nconst scale = isOn && total > 0 ? outputValue / total : 0;\nconst rOut = Math.round(r * scale);\nconst gOut = Math.round(g * scale);\nconst bOut = Math.round(b * scale);\nconst wOut = Math.round(w * scale);\n\n// === 組四筆 Modbus 指令（0x06 Write Single Register）===\nfunction buildCommand(slaveId, reg, value) {\n    const regHi = (reg >> 8) & 0xFF;\n    const regLo = reg & 0xFF;\n    return Buffer.from([\n        slaveId,\n        0x06,\n        regHi,\n        regLo,\n        BRIGHTNESS_TIME,\n        value,\n    ]);\n}\n\nconst cmds = [\n    buildCommand(slaveId, regs[0], rOut),\n    buildCommand(slaveId, regs[1], gOut),\n    buildCommand(slaveId, regs[2], bOut),\n    buildCommand(slaveId, regs[3], wOut),\n];\n\ncmds.forEach(cmd => node.send({ payload: cmd }));\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1930,
+        "y": 560,
+        "wires": [
+            [
+                "97d59163b320300f"
+            ]
+        ]
     },
     {
         "id": "751ec40a6956d4f9",
