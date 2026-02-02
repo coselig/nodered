@@ -443,6 +443,7 @@
             "2b203a76c5d5f274",
             "008fe7a24817a04a",
             "eb42f90fa670e9a1",
+            "7bf99eccbfc8342d",
             "06a431f47980198f",
             "058a9ef11093e498",
             "3ad1f744cd419709",
@@ -504,7 +505,8 @@
             "220cf807f4136e4e",
             "66219e70e6d40173",
             "3c0c4d96550505a8",
-            "3ff748b742b9ecb7"
+            "3ff748b742b9ecb7",
+            "8bf99eccbfc8342d"
         ],
         "x": 1314,
         "y": 879,
@@ -2597,8 +2599,8 @@
         "z": "30810a7b925497c1",
         "g": "b8f7d75a41a871cf",
         "name": "分流器",
-        "func": "/**\n * 分流器：根據 msg.devices 中的 model 和 type 分流到對應的解析節點\n * 輸出 1: p404-single\n * 輸出 2: p404-dual\n * 輸出 3: p210-single\n * 輸出 4: p210-dual\n * 輸出 5: sunwave-scene\n * 輸出 6: guo-single\n * 輸出 7: guo-dual\n */\n\n// 防護檢查\nif (!msg.payload || !Buffer.isBuffer(msg.payload)) return null;\n\n// === 路由配置 ===\nconst DEVICE_ROUTES = {\n    \"p404-single\": 0,\n    \"p404-dual\": 1,\n    \"p210-single\": 2,\n    \"p210-dual\": 3,\n    \"sunwave-scene\": 4,\n    \"p805-single\": 5,\n    \"p805-dual\": 6,\n    \"p805-rgbw\": 7,\n    \"p305-single\": 5,\n    \"p305-dual\": 6,\n    \"p305-rgbw\": 7,\n};\n\n// === 工具函數 ===\nfunction isSunwaveScene(buf) {\n    return buf.length === 8 && \n           buf[0] === 0xFE && \n           buf[1] === 0x06 && \n           buf[2] === 0x08 && \n           buf[3] === 0x20;\n}\n\nfunction createRouteOutput(targetIndex) {\n    const outputs = new Array(7).fill(null);\n    outputs[targetIndex] = msg;\n    return outputs;\n}\n\n// === 場景檢測 ===\nif (isSunwaveScene(msg.payload)) {\n    return createRouteOutput(DEVICE_ROUTES[\"sunwave-scene\"]);\n}\n\n// === 設備分流邏輯 ===\nif (msg.payload.length < 2 || msg.payload[1] !== 0x03) {\n    return null; // 只收 Read Holding Registers 回傳\n}\n\nconst slaveId = msg.payload[0];\nconst devices = msg.devices || [];\nconst matchedDevice = devices.find(d => d.module_id == slaveId);\n\nif (!matchedDevice) {\n    node.warn(`找不到設備: slaveId=${slaveId}, devices=${JSON.stringify(devices.map(d => ({id: d.module_id, model: d.model, type: d.type})))}`);    \n    return null;\n}\n\nconst deviceKey = `${matchedDevice.model}-${matchedDevice.type}`;\n\nconst routeIndex = DEVICE_ROUTES[deviceKey];\n\nif (routeIndex === undefined) {\n    node.warn(`找不到路由: deviceKey=${deviceKey}, 可用路由=${Object.keys(DEVICE_ROUTES)}`);\n    return null;\n}\n\nnode.status({ fill: \"green\", shape: \"dot\", text: `路由到: ${deviceKey} (輸出${routeIndex + 1})` });\nreturn createRouteOutput(routeIndex);",
-        "outputs": 8,
+        "func": "/**\n * 分流器：根據 msg.devices 中的 model 和 type 分流到對應的解析節點\n * 輸出 1: p404-single\n * 輸出 2: p404-dual\n * 輸出 3: p210-single\n * 輸出 4: p210-dual\n * 輸出 5: sunwave-scene\n * 輸出 6: guo-single\n * 輸出 7: guo-dual\n * 輸出 8: p805-rgbw\n * 輸出 9: sunwave-relay\n */\n\n// 防護檢查\nif (!msg.payload || !Buffer.isBuffer(msg.payload)) return null;\n\n// === 路由配置 ===\nconst DEVICE_ROUTES = {\n    \"p404-single\": 0,\n    \"p404-dual\": 1,\n    \"p210-single\": 2,\n    \"p210-dual\": 3,\n    \"sunwave-scene\": 4,\n    \"p805-single\": 5,\n    \"p805-dual\": 6,\n    \"p805-rgbw\": 7,\n    \"p305-single\": 5,\n    \"p305-dual\": 6,\n    \"p305-rgbw\": 7,\n    \"sunwave-relay\": 8,\n};\n\n// === 工具函數 ===\nfunction isSunwaveScene(buf) {\n    return buf.length === 8 && \n           buf[0] === 0xFE && \n           buf[1] === 0x06 && \n           buf[2] === 0x08 && \n           buf[3] === 0x20;\n}\n\nfunction createRouteOutput(targetIndex) {\n    const outputs = new Array(9).fill(null);\n    outputs[targetIndex] = msg;\n    return outputs;\n}\n\n// === 場景檢測 ===\nif (isSunwaveScene(msg.payload)) {\n    return createRouteOutput(DEVICE_ROUTES[\"sunwave-scene\"]);\n}\n\n// === Relay 分流邏輯 (0x01 Read Coils) ===\nif (msg.payload[1] === 0x01) {\n    const slaveId = msg.payload[0];\n    const devices = msg.devices || [];\n    const matchedDevice = devices.find(d => d.module_id == slaveId && d.type === \"relay\");\n    if (matchedDevice) {\n        return createRouteOutput(DEVICE_ROUTES[\"sunwave-relay\"]);\n    } else {\n        return null;\n    }\n}\n\n// === 設備分流邏輯 (0x03 Read Holding Registers) ===\nif (msg.payload.length < 2 || msg.payload[1] !== 0x03) {\n    return null; // 只收 Read Holding Registers 回傳\n}\n\nconst slaveId = msg.payload[0];\nconst devices = msg.devices || [];\nconst matchedDevice = devices.find(d => d.module_id == slaveId);\n\nif (!matchedDevice) {\n    node.warn(`找不到設備: slaveId=${slaveId}, devices=${JSON.stringify(devices.map(d => ({id: d.module_id, model: d.model, type: d.type})))}`);    \n    return null;\n}\n\nconst deviceKey = `${matchedDevice.model}-${matchedDevice.type}`;\n\nconst routeIndex = DEVICE_ROUTES[deviceKey];\n\nif (routeIndex === undefined) {\n    node.warn(`找不到路由: deviceKey=${deviceKey}, 可用路由=${Object.keys(DEVICE_ROUTES)}`);\n    return null;\n}\n\nnode.status({ fill: \"green\", shape: \"dot\", text: `路由到: ${deviceKey} (輸出${routeIndex + 1})` });\nreturn createRouteOutput(routeIndex);",
+        "outputs": 9,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
@@ -2630,6 +2632,9 @@
             ],
             [
                 "51ba28349ff4fa01"
+            ],
+            [
+                "7bf99eccbfc8342d"
             ]
         ]
     },
@@ -2753,6 +2758,48 @@
         "wires": [
             [
                 "058a9ef11093e498"
+            ]
+        ]
+    },
+    {
+        "id": "7bf99eccbfc8342d",
+        "type": "function",
+        "z": "30810a7b925497c1",
+        "g": "b8f7d75a41a871cf",
+        "name": "狀態回饋_Relay",
+        "func": "/**\n * Relay 狀態解析（Modbus RTU 0x01 Read Coils）\n *\n * 回應格式：\n * [SLAVE_ID][0x01][BYTE_COUNT][DATA...][CRC_L][CRC_H]\n *\n * DATA bit 對應：\n * - bit0~bit7  對應通道 1~8\n * - 每 8 個通道使用 1 個 data byte（跨 byte 自動處理）\n *\n * 輸出 MQTT：\n * - homeassistant/light/relay/{id}/{channel}/state\n * - homeassistant/light/relay/{id}/{channel}/set/state\n * - payload: \"ON\" | \"OFF\"\n *\n * 輸出規則：\n * - 每個通道一律同時送 state 與 set/state（便於狀態同步）\n */\n\n// 要解析的 Relay 通道數（需要更多通道只改這個數字）\nconst CHANNELS = 4;\n\nconst buf = msg.payload;\n\nif (!Buffer.isBuffer(buf)) return null;\nif (buf.length < 5) return null;\n\nconst id = buf[0];\nconst funcCode = buf[1];\nconst byteCnt = buf[2];\n\nif (funcCode !== 0x01) return null;\n\n// 期望長度 = 3(header) + byteCnt(data) + 2(CRC)\nconst expectedLen = 3 + byteCnt + 2;\nif (buf.length !== expectedLen) return null;\n\n// 本次回覆最多可提供的通道數（每個 data byte = 8 bits）\nconst maxChannels = byteCnt * 8;\nconst channelsToParse = Math.min(CHANNELS, maxChannels);\n\nconst mqttMsgs = [];\n\nfor (let ch = 0; ch < channelsToParse; ch++) {\n    const byteIndex = 3 + Math.floor(ch / 8);\n    const bitIndex = ch % 8;\n\n    const isOn = ((buf[byteIndex] >> bitIndex) & 1) === 1;\n    const state = isOn ? \"ON\" : \"OFF\";\n\n    const baseTopic = `homeassistant/light/relay/${id}/${ch + 1}`;\n    const setTopic = `${baseTopic}/set`;\n\n    mqttMsgs.push(\n        { topic: `${baseTopic}/state`, payload: state },\n        { topic: `${setTopic}/state`, payload: state }\n    );\n}\n\nnode.status({ fill: \"green\", shape: \"dot\", text: `relay ${id} ch:${channelsToParse}` });\nreturn [mqttMsgs];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1700,
+        "y": 400,
+        "wires": [
+            [
+                "2dc32ec860738711"
+            ]
+        ]
+    },
+    {
+        "id": "8bf99eccbfc8342d",
+        "type": "function",
+        "z": "30810a7b925497c1",
+        "g": "dce36ca2e05c27fc",
+        "name": "狀態回饋_Relay",
+        "func": "/**\n * Relay 狀態解析（Modbus RTU 0x01 Read Coils）\n *\n * 回應格式：\n * [SLAVE_ID][0x01][BYTE_COUNT][DATA...][CRC_L][CRC_H]\n *\n * DATA bit 對應：\n * - bit0~bit7  對應通道 1~8\n * - 每 8 個通道使用 1 個 data byte（跨 byte 自動處理）\n *\n * 輸出 MQTT：\n * - homeassistant/light/relay/{id}/{channel}/state\n * - homeassistant/light/relay/{id}/{channel}/set/state\n * - payload: \"ON\" | \"OFF\"\n *\n * 輸出規則：\n * - 每個通道一律同時送 state 與 set/state（便於狀態同步）\n */\n\n// 要解析的 Relay 通道數（需要更多通道只改這個數字）\nconst CHANNELS = 4;\n\nconst buf = msg.payload;\n\nif (!Buffer.isBuffer(buf)) return null;\nif (buf.length < 5) return null;\n\nconst id = buf[0];\nconst funcCode = buf[1];\nconst byteCnt = buf[2];\n\nif (funcCode !== 0x01) return null;\n\n// 期望長度 = 3(header) + byteCnt(data) + 2(CRC)\nconst expectedLen = 3 + byteCnt + 2;\nif (buf.length !== expectedLen) return null;\n\n// 本次回覆最多可提供的通道數（每個 data byte = 8 bits）\nconst maxChannels = byteCnt * 8;\nconst channelsToParse = Math.min(CHANNELS, maxChannels);\n\nconst mqttMsgs = [];\n\nfor (let ch = 0; ch < channelsToParse; ch++) {\n    const byteIndex = 3 + Math.floor(ch / 8);\n    const bitIndex = ch % 8;\n\n    const isOn = ((buf[byteIndex] >> bitIndex) & 1) === 1;\n    const state = isOn ? \"ON\" : \"OFF\";\n\n    const baseTopic = `homeassistant/light/relay/${id}/${ch + 1}`;\n    const setTopic = `${baseTopic}/set`;\n\n    mqttMsgs.push(\n        { topic: `${baseTopic}/state`, payload: state },\n        { topic: `${setTopic}/state`, payload: state }\n    );\n}\n\nnode.status({ fill: \"green\", shape: \"dot\", text: `relay ${id} ch:${channelsToParse}` });\nreturn [mqttMsgs];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1700,
+        "y": 1080,
+        "wires": [
+            [
+                "296aedf9eae02482"
             ]
         ]
     },
@@ -3095,8 +3142,8 @@
         "z": "30810a7b925497c1",
         "g": "dce36ca2e05c27fc",
         "name": "分流器",
-        "func": "/**\n * 分流器：根據 msg.devices 中的 model 和 type 分流到對應的解析節點\n * 輸出 1: p404-single\n * 輸出 2: p404-dual\n * 輸出 3: p210-single\n * 輸出 4: p210-dual\n * 輸出 5: sunwave-scene\n * 輸出 6: guo-single\n * 輸出 7: guo-dual\n */\n\n// 防護檢查\nif (!msg.payload || !Buffer.isBuffer(msg.payload)) return null;\n\n// === 路由配置 ===\nconst DEVICE_ROUTES = {\n    \"p404-single\": 0,\n    \"p404-dual\": 1,\n    \"p210-single\": 2,\n    \"p210-dual\": 3,\n    \"sunwave-scene\": 4,\n    \"p805-single\": 5,\n    \"p805-dual\": 6,\n    \"p805-rgbw\": 7,\n    \"p305-single\": 5,\n    \"p305-dual\": 6,\n    \"p305-rgbw\": 7,\n};\n\n// === 工具函數 ===\nfunction isSunwaveScene(buf) {\n    return buf.length === 8 && \n           buf[0] === 0xFE && \n           buf[1] === 0x06 && \n           buf[2] === 0x08 && \n           buf[3] === 0x20;\n}\n\nfunction createRouteOutput(targetIndex) {\n    const outputs = new Array(7).fill(null);\n    outputs[targetIndex] = msg;\n    return outputs;\n}\n\n// === 場景檢測 ===\nif (isSunwaveScene(msg.payload)) {\n    return createRouteOutput(DEVICE_ROUTES[\"sunwave-scene\"]);\n}\n\n// === 設備分流邏輯 ===\nif (msg.payload.length < 2 || msg.payload[1] !== 0x03) {\n    return null; // 只收 Read Holding Registers 回傳\n}\n\nconst slaveId = msg.payload[0];\nconst devices = msg.devices || [];\nconst matchedDevice = devices.find(d => d.module_id == slaveId);\n\nif (!matchedDevice) {\n    node.warn(`找不到設備: slaveId=${slaveId}, devices=${JSON.stringify(devices.map(d => ({id: d.module_id, model: d.model, type: d.type})))}`);    \n    return null;\n}\n\nconst deviceKey = `${matchedDevice.model}-${matchedDevice.type}`;\n\nconst routeIndex = DEVICE_ROUTES[deviceKey];\n\nif (routeIndex === undefined) {\n    node.warn(`找不到路由: deviceKey=${deviceKey}, 可用路由=${Object.keys(DEVICE_ROUTES)}`);\n    return null;\n}\n\nnode.status({ fill: \"green\", shape: \"dot\", text: `路由到: ${deviceKey} (輸出${routeIndex + 1})` });\nreturn createRouteOutput(routeIndex);",
-        "outputs": 8,
+        "func": "/**\n * 分流器：根據 msg.devices 中的 model 和 type 分流到對應的解析節點\n * 輸出 1: p404-single\n * 輸出 2: p404-dual\n * 輸出 3: p210-single\n * 輸出 4: p210-dual\n * 輸出 5: sunwave-scene\n * 輸出 6: guo-single\n * 輸出 7: guo-dual\n * 輸出 8: p805-rgbw\n * 輸出 9: sunwave-relay\n */\n\n// 防護檢查\nif (!msg.payload || !Buffer.isBuffer(msg.payload)) return null;\n\n// === 路由配置 ===\nconst DEVICE_ROUTES = {\n    \"p404-single\": 0,\n    \"p404-dual\": 1,\n    \"p210-single\": 2,\n    \"p210-dual\": 3,\n    \"sunwave-scene\": 4,\n    \"p805-single\": 5,\n    \"p805-dual\": 6,\n    \"p805-rgbw\": 7,\n    \"p305-single\": 5,\n    \"p305-dual\": 6,\n    \"p305-rgbw\": 7,\n    \"sunwave-relay\": 8,\n};\n\n// === 工具函數 ===\nfunction isSunwaveScene(buf) {\n    return buf.length === 8 && \n           buf[0] === 0xFE && \n           buf[1] === 0x06 && \n           buf[2] === 0x08 && \n           buf[3] === 0x20;\n}\n\nfunction createRouteOutput(targetIndex) {\n    const outputs = new Array(9).fill(null);\n    outputs[targetIndex] = msg;\n    return outputs;\n}\n\n// === 場景檢測 ===\nif (isSunwaveScene(msg.payload)) {\n    return createRouteOutput(DEVICE_ROUTES[\"sunwave-scene\"]);\n}\n\n// === Relay 分流邏輯 (0x01 Read Coils) ===\nif (msg.payload[1] === 0x01) {\n    const slaveId = msg.payload[0];\n    const devices = msg.devices || [];\n    const matchedDevice = devices.find(d => d.module_id == slaveId && d.type === \"relay\");\n    if (matchedDevice) {\n        return createRouteOutput(DEVICE_ROUTES[\"sunwave-relay\"]);\n    } else {\n        return null;\n    }\n}\n\n// === 設備分流邏輯 (0x03 Read Holding Registers) ===\nif (msg.payload.length < 2 || msg.payload[1] !== 0x03) {\n    return null; // 只收 Read Holding Registers 回傳\n}\n\nconst slaveId = msg.payload[0];\nconst devices = msg.devices || [];\nconst matchedDevice = devices.find(d => d.module_id == slaveId);\n\nif (!matchedDevice) {\n    node.warn(`找不到設備: slaveId=${slaveId}, devices=${JSON.stringify(devices.map(d => ({id: d.module_id, model: d.model, type: d.type})))}`);    \n    return null;\n}\n\nconst deviceKey = `${matchedDevice.model}-${matchedDevice.type}`;\n\nconst routeIndex = DEVICE_ROUTES[deviceKey];\n\nif (routeIndex === undefined) {\n    node.warn(`找不到路由: deviceKey=${deviceKey}, 可用路由=${Object.keys(DEVICE_ROUTES)}`);\n    return null;\n}\n\nnode.status({ fill: \"green\", shape: \"dot\", text: `路由到: ${deviceKey} (輸出${routeIndex + 1})` });\nreturn createRouteOutput(routeIndex);",
+        "outputs": 9,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
@@ -3128,6 +3175,9 @@
             ],
             [
                 "3ff748b742b9ecb7"
+            ],
+            [
+                "8bf99eccbfc8342d"
             ]
         ]
     },
